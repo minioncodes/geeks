@@ -21,9 +21,7 @@
     <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
-    <link
-        href="https://assets-global.website-files.com/5746a22e485f3a03442bea0f/css/creativity-template.webflow.6d3f8c218.css"
-        rel="stylesheet" type="text/css" />
+    <link href="/src/assets/css/product.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -149,7 +147,7 @@
                             <div class="dropdown-arrow w-icon-dropdown-toggle"></div>
                         </div>
                         <nav class="drtopdown-list w-dropdown-list">
-                            <a href="/blog/blog" class="dropdown-link w-dropdown-link">Blog 1</a>
+                            <a href="/src/blog.html" class="dropdown-link w-dropdown-link">Blog 1</a>
                         </nav>
                     </div>
                     <a href="/src/contact.html" class="navigation-link w-nav-link">Contact</a>
@@ -170,9 +168,9 @@
             transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0)
               rotateY(0) rotateZ(0) skew(0, 0);
           " sizes="100px" data-ix="hero-button-2" data-w-id="c0f26aa0-abd0-593f-bf4e-89ca12c746d1" srcset="
-            https://assets-global.website-files.com/5746a22e485f3a03442bea0f/596f714df4db77607ee87bb0_logoc-p-500.png 500w,
-            https://assets-global.website-files.com/5746a22e485f3a03442bea0f/596f714df4db77607ee87bb0_logoc.png       600w
+          
           " />
+            <!-- yahan upar srcset ke andar logo tha  -->
             <h1 data-ix="hero-button-3" data-w-id="2dd5d8d1-131f-9a1e-6046-ea97850d7ca5" style="
             opacity: 0;
             -webkit-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1)
@@ -194,24 +192,17 @@
         </div>
     </div>
     <div class="section brand mock-up">
-        <img class="mock-up-image"
-            src="https://cdn.prod.website-files.com/5746a22e485f3a03442bea0f/5e5a7c110e170690e6768108_004%20(2).png"
-            width="700" alt="" style="
-          opacity: 0;
-          -webkit-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0)
-            rotateY(0) rotateZ(0) skew(0, 0);
-          -moz-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0)
-            rotateY(0) rotateZ(0) skew(0, 0);
-          -ms-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0)
-            rotateY(0) rotateZ(0) skew(0, 0);
-          transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0)
-            rotateY(0) rotateZ(0) skew(0, 0);
+        <img class="mock-up-image" src="/src/assets/laptopcpu1.png" width="700" alt="" style="
+        opacity: 0;
+        transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0)
+        rotateY(0) rotateZ(0) skew(0, 0);
         " sizes="(max-width: 479px) 92vw, (max-width: 767px) 100vw, 700px" data-ix="hero-button-5"
             data-w-id="977b9f01-ad50-b527-e5e4-bb7be7688a94" srcset="
-          https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a7c110e170690e6768108_004%20(2)-p-500.png  500w,
-          https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a7c110e170690e6768108_004%20(2).png       1000w
+         500w,
+         1000w
         " />
     </div>
+
     <div class="section gray">
         <div class="container full">
             <div class="columns-2 w-row">
@@ -247,19 +238,29 @@
                         data-nav-spacing="3" data-duration="500" data-infinite="true">
                         <div class="mask w-slider-mask">
                             <div class="w-slide">
-                                <div class="slide-div"></div>
+                                <div class="slide-div">
+                                    <img class="slide-div-img" src="/src/assets/productimage3.png"/>
+                                </div>
                             </div>
                             <div class="slide w-slide">
-                                <div class="slide-div second"></div>
+                                <div class="slide-div second">
+                                    <img class="slide-div-img" src="/src/assets/productimage3.png"/>
+                                </div>
                             </div>
                         </div>
                         <div class="left-arrow w-slider-arrow-left">
-                            <div class="w-icon-slider-left"></div>
+                            <div class="w-icon-slider-left">
+                                <img class="slide-div-img" src="/src/assets/productimage3.png"/>
+                            </div>
                         </div>
                         <div class="right-arrow w-slider-arrow-right">
-                            <div class="w-icon-slider-right"></div>
+                            <div class="w-icon-slider-right">
+                                <img class="slide-div-img" src="/src/assets/productimage3.png"/>
+                            </div>
                         </div>
-                        <div class="slide-nav small w-slider-nav w-round"></div>
+                        <div class="slide-nav small w-slider-nav w-round">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -294,22 +295,21 @@
                         data-nav-spacing="3" data-duration="500" data-infinite="true">
                         <div class="mask-2 w-slider-mask">
                             <div class="w-slide">
-                                <img src="https://cdn.prod.website-files.com/5746a22e485f3a03442bea0f/596f60c7a5fd2049094845f3_man.png"
-                                    width="700"
+                                <img src="/src/assets/productlaptopimg1.png" width="700"
                                     sizes="(max-width: 479px) 92vw, (max-width: 767px) 91vw, (max-width: 991px) 92vw, 46vw"
                                     srcset="
-                      https://assets-global.website-files.com/5746a22e485f3a03442bea0f/596f60c7a5fd2049094845f3_man-p-500.png  500w,
-                      https://assets-global.website-files.com/5746a22e485f3a03442bea0f/596f60c7a5fd2049094845f3_man-p-800.png  800w,
-                      https://assets-global.website-files.com/5746a22e485f3a03442bea0f/596f60c7a5fd2049094845f3_man.png       1200w
+                                    /src/assets/productlaptopimg1.png  500w,
+                                    /src/assets/productlaptopimg1.png  800w,
+                                    /src/assets/productlaptopimg1.png     1200w
                     " alt="" class="model-image" />
                             </div>
                             <div class="slide w-slide">
-                                <img src="https://cdn.prod.website-files.com/5746a22e485f3a03442bea0f/5df419e6a58b620af1c6ab7a_58c7149e0709dda74260b034_11ss1.png"
+                                <img src="/src/assets/productlaptopimg1.png"
                                     sizes="(max-width: 479px) 100vw, (max-width: 767px) 91vw, (max-width: 991px) 92vw, 100vw"
                                     srcset="
-                      https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5df419e6a58b620af1c6ab7a_58c7149e0709dda74260b034_11ss1-p-500.png  500w,
-                      https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5df419e6a58b620af1c6ab7a_58c7149e0709dda74260b034_11ss1-p-800.png  800w,
-                      https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5df419e6a58b620af1c6ab7a_58c7149e0709dda74260b034_11ss1.png       1000w
+                     /src/assets/productlaptopimg1.png 500w,
+                     /src/assets/productlaptopimg1.png  800w,
+                     /src/assets/productlaptopimg1.png  1000w
                     " alt="" class="model-image" />
                             </div>
                         </div>
@@ -464,8 +464,9 @@
                     <div class="w-col w-col-6">
                         <p class="bottom-footer-text right">
                             Template design by
-                            <a href="https://www.dorianhoxha.com/" class="bottom-footer-link">Made with Love<a href="https://webflow.com/templates/designers/dorian-hoxha"
-                                class="bottom-footer-link"></a>
+                            <a href="https://www.dorianhoxha.com/" class="bottom-footer-link">Made with Love<a
+                                    href="https://webflow.com/templates/designers/dorian-hoxha"
+                                    class="bottom-footer-link"></a>
                         </p>
                     </div>
                 </div>
