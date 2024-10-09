@@ -3976,7 +3976,7 @@ blockquote {
 .portfolio-block {
   width: 100%;
   height: 450px;
-  background-image: url("/src/assets/2ndimageofhomepage.png");
+  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a6a690e17062a15760e92_5d03d7941c2fed0b37c44280_323234.jpg");
   background-position: 50%;
   background-size: cover;
   border-radius: 0;
@@ -3984,18 +3984,18 @@ blockquote {
 }
 
 .portfolio-block._2 {
-  background-image: url("/src/assets/2ndimageofhomepage.png");
+  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a6a7ac9fe8443348d5097_5d03db53e13f2755f6a53fda_rqwer.jpg");
   background-size: cover;
 }
 
 .portfolio-block._3 {
-  background-image: url("/src/assets/2ndimageofhomepage.png");
+  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a6ab03fb2cc781c6e8cf1_5d03d800e13f27be7ea53130_35342534.jpg");
   background-position: 50%;
   background-size: cover;
 }
 
 .portfolio-block._4 {
-  background-image: url("/src/assets/2ndimageofhomepage.png ");
+  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a6ac10e170645b2760f21_5d03db7b6d24105e665a671c_4234123.jpg");
   background-size: cover;
 }
 

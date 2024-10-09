@@ -3011,7 +3011,7 @@ blockquote {
 
 .section-tittle-block.image-laptop {
   height: 500px;
-  background-image: url("/src/assets/2ndimageofhomepage.png");
+  background-image: url("https://quicksquad.live/assets/2ndimageofhomepage.png");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;

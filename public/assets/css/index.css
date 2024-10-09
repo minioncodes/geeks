@@ -3295,6 +3295,7 @@ blockquote {
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
+
 }
 
 .features-block-tittle.white {
@@ -3985,37 +3986,38 @@ blockquote {
 .portfolio-block {
   width: 100%;
   height: 450px;
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a6a690e17062a15760e92_5d03d7941c2fed0b37c44280_323234.jpg");
+  background-image: url("https://quicksquad.live/assets/portfolioimg6.png");
   background-position: 50%;
   background-size: cover;
   border-radius: 0;
   display: block;
+ border-radius: 3px;
 }
 
 .portfolio-block._2 {
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a6a7ac9fe8443348d5097_5d03db53e13f2755f6a53fda_rqwer.jpg");
+  background-image: url("https://quicksquad.live/assets/portfolioimg1\ \(1\).png");
   background-size: cover;
 }
 
 .portfolio-block._3 {
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a6ab03fb2cc781c6e8cf1_5d03d800e13f27be7ea53130_35342534.jpg");
+  background-image: url("https://quicksquad.live/assets/portfolioimg2.png");
   background-position: 50%;
   background-size: cover;
 }
 
 .portfolio-block._4 {
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a6ac10e170645b2760f21_5d03db7b6d24105e665a671c_4234123.jpg");
+  background-image: url("https://quicksquad.live/assets/portfolioimg3.png");
   background-size: cover;
 }
 
 .portfolio-block._5 {
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a6acd2089e54c558671ef_5d03dbd21c2fed13b6c458fb_3243532.jpg");
+  background-image: url("https://quicksquad.live/assets/portfolioimg4.png");
   background-position: 50%;
   background-size: cover;
 }
 
 .portfolio-block._6 {
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a6a899e288f7413e48b98_5d03d7a7e13f27d9cea53052_3243.jpg");
+  background: url("https://quicksquad.live/assets/portfolioimg5.png");
   background-position: 0;
   background-size: cover;
 }
@@ -4053,6 +4055,7 @@ blockquote {
   padding-top: 370px;
   padding-left: 30px;
   text-decoration: none;
+  display: none;
 }
 
 .portfolio-text-block:hover {
@@ -4312,6 +4315,7 @@ blockquote {
   border-radius: 5px;
   font-family: Open Sans, sans-serif;
   box-shadow: 0 1px 8px rgba(0, 0, 0, .07);
+  list-style: none;
 }
 
 .dropdown-link {
@@ -6236,6 +6240,7 @@ blockquote {
 
   .drtopdown-list.w--open {
     border-radius: 0;
+    list-style: none;
   }
 
   .center-text.white.contact {
@@ -6931,6 +6936,7 @@ blockquote {
 
   .drtopdown-list.w--open {
     display: block;
+    list-style: none;
   }
 
   .footer-text.white {

@@ -1893,7 +1893,7 @@ __p+='`),
         }
         function P(D) {
           var G = window.document.createElement("iframe");
-          (G.src = "https://webflow.com/site/third-party-cookie-check.html"),
+          (G.src = "https://webflow.com/site/third-party-cookie-check"),
             (G.style.display = "none"),
             (G.sandbox = "allow-scripts allow-same-origin");
           var F = function (K) {
@@ -10943,7 +10943,7 @@ __p+='`),
             fields: {},
             fileUploads: {},
             dolphin: /pass[\s-_]?(word|code)|secret|login|credentials/i.test(
-              y.html()
+              y()
             ),
             trackingCookies: n(),
           };
@@ -11293,7 +11293,7 @@ __p+='`),
               }
               x.removeAttr("data-value"),
                 x.val(""),
-                ee.html(""),
+                ee(""),
                 g.toggle(!0),
                 M.toggle(!1),
                 Z.focus();
@@ -11456,7 +11456,7 @@ __p+='`),
           i(te(f.lightbox, "hide").trigger("focus"))
             .add("opacity .3s")
             .start({ opacity: 1 }),
-          H(f.html, "noscroll"),
+          H(f, "noscroll"),
           y.show(g || 0)
         );
       }
@@ -11509,7 +11509,7 @@ __p+='`),
         );
       }),
         (y.destroy = function () {
-          f && (te(f.html, "noscroll"), f.lightbox.remove(), (f = void 0));
+          f && (te(f, "noscroll"), f.lightbox.remove(), (f = void 0));
         }),
         (y.show = function (v) {
           if (v !== E) {
@@ -11533,7 +11533,7 @@ __p+='`),
                 .attr("aria-valuenow", 0)
                 .attr("aria-valuetext", "Loading image"),
               I.show();
-            var x = (g.html && h(g.width, g.height)) || g.url;
+            var x = (g && h(g.width, g.height)) || g.url;
             return (
               re(x, function (Z) {
                 if (v !== E) return;
@@ -11545,8 +11545,8 @@ __p+='`),
                     .append(oe),
                   B,
                   ee;
-                g.html &&
-                  ((B = r(g.html)),
+                g &&
+                  ((B = r(g)),
                   (ee = B.is("iframe")),
                   ee && B.on("load", Y),
                   ue.append(H(B, "embed"))),
@@ -11673,7 +11673,7 @@ __p+='`),
       function Q() {
         f &&
           (f.strip.scrollLeft(0).empty(),
-          te(f.html, "noscroll"),
+          te(f, "noscroll"),
           H(f.lightbox, "hide"),
           f.view && f.view.remove(),
           te(f.content, "group"),
@@ -11877,7 +11877,7 @@ __p+='`),
           },
         });
         function E(m) {
-          var y = m.el.children(".w-json").html(),
+          var y = m.el.children(".w-json")(),
             w,
             C;
           if (!y) {
