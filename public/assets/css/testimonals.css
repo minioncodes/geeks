@@ -6,8 +6,6 @@ html {
 
 body {
   margin: 0;
-  background-color: blue;
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
@@ -200,27 +198,27 @@ td, th {
 }
 
 .w-icon-slider-right:before {
-  content: "";
+  content: "î˜€";
 }
 
 .w-icon-slider-left:before {
-  content: "";
+  content: "î˜";
 }
 
 .w-icon-nav-menu:before {
-  content: "";
+  content: "î˜‚";
 }
 
 .w-icon-arrow-down:before, .w-icon-dropdown-toggle:before {
-  content: "";
+  content: "î˜ƒ";
 }
 
 .w-icon-file-upload-remove:before {
-  content: "";
+  content: "î¤€";
 }
 
 .w-icon-file-upload-icon:before {
-  content: "";
+  content: "î¤ƒ";
 }
 
 * {
@@ -353,10 +351,9 @@ pre.w-code-block code {
   right: auto;
   overflow: visible;
   transform: none;
-  display: none;
 }
 
-/* .w-webflow-badge {
+.w-webflow-badge {
   white-space: nowrap;
   cursor: pointer;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .1);
@@ -381,14 +378,13 @@ pre.w-code-block code {
   right: 12px !important;
   overflow: visible !important;
   transform: none !important;
-} */
+}
 
 .w-webflow-badge > img {
-  visibility: hidden;
+  visibility: visible !important;
   opacity: 1 !important;
   vertical-align: middle !important;
-  display: none;
-  display: none;
+  display: inline-block !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1390,7 +1386,6 @@ textarea.w-input, textarea.w-select {
   padding: 20px;
   text-decoration: none;
   position: relative;
-  /* display: none; */
 }
 
 .w-dropdown-toggle {
@@ -1399,12 +1394,11 @@ textarea.w-input, textarea.w-select {
   user-select: none;
   cursor: pointer;
   padding-right: 40px;
-  /* display: inline-block; */
+  display: inline-block;
 }
 
 .w-dropdown-toggle:focus {
   outline: 0;
-  /* display: none; */
 }
 
 .w-icon-dropdown-toggle {
@@ -1415,7 +1409,6 @@ textarea.w-input, textarea.w-select {
   top: 0;
   bottom: 0;
   right: 0;
-  
 }
 
 .w-dropdown-list {
@@ -1426,23 +1419,21 @@ textarea.w-input, textarea.w-select {
 }
 
 .w-dropdown-list.w--open {
-  display: none;
+  display: block;
 }
 
 .w-dropdown-link {
   color: #222;
   padding: 10px 20px;
-  display: none;
+  display: block;
 }
 
 .w-dropdown-link.w--current {
   color: #0082f3;
-  display: none;
 }
 
 .w-dropdown-link:focus {
   outline: 0;
-  display: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -2036,7 +2027,7 @@ textarea.w-input, textarea.w-select {
   position: relative;
 }
 
-.w-f {
+.w-tab-link {
   vertical-align: top;
   text-align: left;
   cursor: pointer;
@@ -3295,7 +3286,6 @@ blockquote {
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
-
 }
 
 .features-block-tittle.white {
@@ -3986,38 +3976,37 @@ blockquote {
 .portfolio-block {
   width: 100%;
   height: 450px;
-  background-image: url("https://quicksquad.live/assets/portfolioimg6.png");
+  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a6a690e17062a15760e92_5d03d7941c2fed0b37c44280_323234.jpg");
   background-position: 50%;
   background-size: cover;
   border-radius: 0;
   display: block;
- border-radius: 3px;
 }
 
 .portfolio-block._2 {
-  background-image: url("https://quicksquad.live/assets/portfolioimg1\ \(1\).png");
+  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a6a7ac9fe8443348d5097_5d03db53e13f2755f6a53fda_rqwer.jpg");
   background-size: cover;
 }
 
 .portfolio-block._3 {
-  background-image: url("https://quicksquad.live/assets/portfolioimg2.png");
+  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a6ab03fb2cc781c6e8cf1_5d03d800e13f27be7ea53130_35342534.jpg");
   background-position: 50%;
   background-size: cover;
 }
 
 .portfolio-block._4 {
-  background-image: url("https://quicksquad.live/assets/portfolioimg3.png");
+  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a6ac10e170645b2760f21_5d03db7b6d24105e665a671c_4234123.jpg");
   background-size: cover;
 }
 
 .portfolio-block._5 {
-  background-image: url("https://quicksquad.live/assets/portfolioimg4.png");
+  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a6acd2089e54c558671ef_5d03dbd21c2fed13b6c458fb_3243532.jpg");
   background-position: 50%;
   background-size: cover;
 }
 
 .portfolio-block._6 {
-  background: url("https://quicksquad.live/assets/portfolioimg5.png");
+  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5e5a6a899e288f7413e48b98_5d03d7a7e13f27d9cea53052_3243.jpg");
   background-position: 0;
   background-size: cover;
 }
@@ -4055,7 +4044,6 @@ blockquote {
   padding-top: 370px;
   padding-left: 30px;
   text-decoration: none;
-  display: none;
 }
 
 .portfolio-text-block:hover {
@@ -4278,7 +4266,6 @@ blockquote {
   font-family: Poppins, sans-serif;
   font-size: 12px;
   font-weight: 500;
-  /* display: none; */
 }
 
 .dropdown-toggle:hover {
@@ -4288,7 +4275,6 @@ blockquote {
 .dropdown-toggle.w--open {
   letter-spacing: 1px;
   background-color: rgba(0, 0, 0, 0);
-  /* display: none; */
 }
 
 .dropdown-toggle.dark {
@@ -4315,7 +4301,6 @@ blockquote {
   border-radius: 5px;
   font-family: Open Sans, sans-serif;
   box-shadow: 0 1px 8px rgba(0, 0, 0, .07);
-  list-style: none;
 }
 
 .dropdown-link {
@@ -4332,12 +4317,10 @@ blockquote {
   font-weight: 500;
   line-height: 22px;
   transition: all .4s;
-  display: none;
 }
 
 .dropdown-link:hover {
   color: #1c1c1c;
-  display: none;
 }
 
 .dropdown-link.w--current {
@@ -4348,7 +4331,6 @@ blockquote {
   font-family: Poppins, sans-serif;
   font-weight: 500;
   line-height: 22px;
-  display: none;
 }
 
 .center-text {
@@ -6240,7 +6222,6 @@ blockquote {
 
   .drtopdown-list.w--open {
     border-radius: 0;
-    list-style: none;
   }
 
   .center-text.white.contact {
@@ -6936,7 +6917,6 @@ blockquote {
 
   .drtopdown-list.w--open {
     display: block;
-    list-style: none;
   }
 
   .footer-text.white {
