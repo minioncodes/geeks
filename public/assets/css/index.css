@@ -750,9 +750,8 @@ textarea.w-input, textarea.w-select {
   float: left;
   width: 100%;
   min-height: 1px;
-  margin: 10px;
   padding-left: 10px;
-  /* padding-right: 10px; */
+  padding-right: 10px;
   position: relative;
 }
 
@@ -779,8 +778,6 @@ textarea.w-input, textarea.w-select {
 
 .w-col-5 {
   width: 41.6667%;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px grey;
 }
 
 .w-col-6 {
@@ -4068,10 +4065,11 @@ blockquote {
 .div-text {
   height: auto;
   text-align: left;
+  background-color: #c7c7c7;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   margin-top: 0;
-  /* margin-bottom: 20px; */
+  margin-bottom: 20px;
   padding: 30px 20px;
 }
 
