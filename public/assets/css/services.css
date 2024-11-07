@@ -774,6 +774,7 @@ textarea.w-input, textarea.w-select {
 
 .w-col-5 {
   width: 41.6667%;
+  box-shadow: 5px 5px 5px grey;
 }
 
 .w-col-6 {
@@ -4053,7 +4054,7 @@ blockquote {
 .div-text {
   height: auto;
   text-align: left;
-  background-color: #fff;
+  background-color: #c7c7c7;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   margin-top: 0;
@@ -4070,13 +4071,13 @@ blockquote {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, .09);
 }
 
-.blog-block {
+/* .blog-block {
   width: 100%;
   height: 300px;
   background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/58bd46bde9c6693a0278e6a3_photo-09_1.jpg");
   background-position: 50%;
   background-size: cover;
-}
+} */
 
 .blog-block.singel-page {
   height: 450px;
