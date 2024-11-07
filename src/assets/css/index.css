@@ -750,6 +750,7 @@ textarea.w-input, textarea.w-select {
   float: left;
   width: 100%;
   min-height: 1px;
+  margin: 10px;
   padding-left: 10px;
   /* padding-right: 10px; */
   position: relative;
