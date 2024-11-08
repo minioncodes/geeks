@@ -5574,9 +5574,9 @@ blockquote {
   display: flex;
 }
 
-.page-wrapper {
+/* .page-wrapper {
   overflow: hidden;
-}
+} */
 
 .gray-space {
   background-color: #f5f4f7;
