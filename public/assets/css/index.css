@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  background-color: blue;
+  background-color: #191717;
   font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
@@ -3182,7 +3182,7 @@ blockquote {
 }
 
 .page-header-overlay.blog {
-  background-image: linear-gradient(rgba(24, 79, 194, .95), rgba(24, 79, 194, .95)), url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5967c52c4b632d20cb998ca7_stanley-dai-242205%20(1).jpg");
+  background-image: linear-gradient(#a7a7a7, #191717), url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/5967c52c4b632d20cb998ca7_stanley-dai-242205%20(1).jpg");
   background-position: 0 0, 50%;
   background-size: auto, cover;
 }
@@ -3277,6 +3277,7 @@ blockquote {
 
 .features-icon {
   height: 36px;
+  filter: brightness(0);
   text-align: left;
   background-color: rgba(0, 0, 0, 0);
   margin-bottom: 0;
@@ -3631,6 +3632,7 @@ blockquote {
 }
 
 .check-list-icon {
+  filter: brightness(0);
   width: 24px;
   float: left;
   margin-right: 13px;
@@ -3719,7 +3721,7 @@ blockquote {
 }
 
 .navigation-link {
-  color: rgba(255, 255, 255, .65);
+  color: rgba(255, 255, 255, 0.941);
   letter-spacing: 1px;
   padding: 14px 20px;
   font-family: Poppins, sans-serif;
@@ -3954,6 +3956,7 @@ blockquote {
   background-color: rgba(0, 0, 0, 0);
   border: 1px #a8a8a8;
   border-radius: 5px;
+  color: black;
   margin-right: 5px;
   padding-left: 12px;
   padding-right: 12px;
