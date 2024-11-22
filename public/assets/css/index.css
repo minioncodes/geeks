@@ -2467,7 +2467,7 @@ blockquote {
 }
 
 .section.products {
-  background-color: #184fc2;
+  background-image: linear-gradient(#a7a7a7, #191717);
   position: static;
 }
 
@@ -2480,7 +2480,7 @@ blockquote {
 
 .section.testimonials {
   background-color: #184fc2;
-  background-image: linear-gradient(rgba(24, 79, 194, .95), rgba(24, 79, 194, .95)), url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/58c70b5896695e2b578dab9e_04-3.jpg");
+  background-image: linear-gradient(#a7a7a7, #191717), url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/58c70b5896695e2b578dab9e_04-3.jpg");
   background-position: 0 0, 50%;
   background-size: auto, cover;
   background-attachment: scroll, fixed;
@@ -2843,7 +2843,7 @@ blockquote {
   width: 140px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background-color: #184fc2;
+  background-color: #191717;
   border-radius: 3px;
   margin-top: 20px;
   padding: 10px 25px;
@@ -2854,7 +2854,7 @@ blockquote {
 
 .button.feature:hover {
   color: #fff;
-  background-color: #1c5feb;
+  background-color: #191717;
 }
 
 .button.feature.outline {
