@@ -2107,7 +2107,7 @@ textarea.w-input, textarea.w-select {
 :root {
   --black: #1c1c1c;
   --ghost-white: #f1f1f7;
-  --royal-blue: #184fc2;
+  --royal-blue: #191717;
   --royal-blue-2: #276dff;
   --cadet-blue: #26acc7;
   --deep-pink: #ff1774;
@@ -2251,7 +2251,7 @@ ul, ol {
 
 blockquote {
   color: var(--black);
-  border-left: 3px solid #184fc2;
+  border-left: 3px solid #191717;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px 20px;
@@ -2437,7 +2437,7 @@ blockquote {
 
 .hero-button.alternative:hover {
   color: #fff;
-  background-color: #184fc2;
+  background-color: #191717;
 }
 
 .hero-button.alternative.outline {
@@ -2479,7 +2479,7 @@ blockquote {
 }
 
 .section.testimonials {
-  background-color: #184fc2;
+  background-color: #191717;
   background-image: linear-gradient(#a7a7a7, #191717), url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/58c70b5896695e2b578dab9e_04-3.jpg");
   background-position: 0 0, 50%;
   background-size: auto, cover;
@@ -2798,7 +2798,7 @@ blockquote {
 .section-divider-line {
   width: 100px;
   height: 3px;
-  background-color: #276dff;
+  background-color: #191717;
   margin-top: 20px;
   margin-bottom: 20px;
   display: inline-block;
@@ -2827,7 +2827,7 @@ blockquote {
 
 .button {
   text-align: center;
-  background-color: #184fc2;
+  background-color: #a7a7a7;
   border-radius: 3px;
   margin-top: 10px;
   font-family: Open Sans, sans-serif;
@@ -2874,8 +2874,8 @@ blockquote {
 
 .button.feature.outline:hover {
   color: #fff;
-  background-color: #184fc2;
-  border-color: #184fc2;
+  background-color: #191717;
+  border-color: #191717;
 }
 
 .button.feature.white-color {
@@ -3048,7 +3048,7 @@ blockquote {
 }
 
 .feature-tittle.subtittle.team {
-  color: #184fc2;
+  color: #191717;
   font-size: 14px;
   font-weight: 400;
 }
@@ -3143,7 +3143,7 @@ blockquote {
 }
 
 .paragraph.uptittle {
-  color: #184fc2;
+  color: #191717;
   margin-bottom: 0;
 }
 
@@ -3167,7 +3167,7 @@ blockquote {
   height: auto;
   float: none;
   text-align: center;
-  background-color: #184fc2;
+  background-image: linear-gradient(#a7a7a7, #191717);
   border-radius: 0;
   margin-top: 0;
   margin-right: 1px;
@@ -3215,7 +3215,7 @@ blockquote {
 
 .page-header-overlay.black {
   height: 700px;
-  background-color: #184fc2;
+  background-color: #191717;
   background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/599e95f78e3f0b0001989fe9_geometric-pattern.png");
   background-position: 0 0;
   background-size: contain;
@@ -3327,7 +3327,7 @@ blockquote {
 }
 
 .facts-section.blue {
-  background-color: #184fc2;
+  background-color: #191717;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -3348,7 +3348,7 @@ blockquote {
 }
 
 .facts-tittle {
-  color: #184fc2;
+  color: #191717;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
@@ -3418,7 +3418,7 @@ blockquote {
   width: 80%;
   height: 100%;
   color: rgba(0, 0, 0, 0);
-  background-color: #184fc2;
+  background-color: #191717;
   border-style: none;
   margin-bottom: 0;
   padding: 0;
@@ -3749,7 +3749,7 @@ blockquote {
 }
 
 .navigation-link.black:hover {
-  color: #184fc2;
+  color: #191717;
 }
 
 .navigation-link.dark {
@@ -3777,7 +3777,7 @@ blockquote {
 
 .div-line {
   width: 20%;
-  border-bottom: 3px solid #276dff;
+  border-bottom: 3px solid #191717;
   margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
@@ -3803,7 +3803,7 @@ blockquote {
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background-color: #184fc2;
+  background-color: #191717;
   border-radius: 3px;
   margin-top: 10px;
   padding: 10px 25px;
@@ -3829,7 +3829,7 @@ blockquote {
 }
 
 .learn-more.home {
-  border: 1px solid #184fc2;
+  border: 1px solid #191717;
   margin-right: 10px;
 }
 
@@ -3838,14 +3838,14 @@ blockquote {
 }
 
 .learn-more.outline {
-  color: #184fc2;
+  color: #191717;
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #184fc2;
+  border: 1px solid #191717;
 }
 
 .learn-more.outline:hover {
   color: #fff;
-  background-color: #184fc2;
+  background-color: #191717;
 }
 
 .learn-more.line {
@@ -3969,7 +3969,7 @@ blockquote {
 .tab-link.w--current {
   color: #fff;
   text-transform: uppercase;
-  background-color: #184fc2;
+  background-color: #191717;
   border-style: none;
   margin-right: 5px;
   padding-left: 15px;
@@ -4041,7 +4041,7 @@ blockquote {
 
 .color-box:hover {
   opacity: 1;
-  background-color: rgba(24, 79, 194, .91);
+  background-color: #38383893;
   text-decoration: none;
 }
 
@@ -4118,7 +4118,7 @@ blockquote {
 }
 
 .submit-bacground-section {
-  background-color: #184fc2;
+  background-color: #191717;
   background-image: linear-gradient(rgba(24, 79, 194, .9), rgba(24, 79, 194, .9)), url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/58c6f7502db33b7017386786_smartphone-925758_1920.jpg");
   background-position: 0 0, 50%;
   background-size: auto, cover;
@@ -4174,14 +4174,14 @@ blockquote {
   height: 100%;
   float: left;
   text-align: left;
-  border-right: 1px solid rgba(255, 255, 255, .08);
+  /* border-right: 1px solid rgba(255, 255, 255, .08); */
   padding: 30px 50px 30px 0;
 }
 
 .div-wrapper {
   width: 100%;
   height: 370px;
-  background-color: #184fc2;
+  background-image: linear-gradient(#a7a7a7, #191717);
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
@@ -4342,7 +4342,7 @@ blockquote {
 }
 
 .dropdown-link.w--current {
-  color: #184fc2;
+  color: #191717;
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -4422,7 +4422,7 @@ blockquote {
   width: 100%;
   height: 40px;
   float: none;
-  background-color: #184fc2;
+  background-color: #191717;
   padding: 10px 20px;
   position: relative;
   top: 0;
@@ -4531,7 +4531,7 @@ blockquote {
 }
 
 .banner.pattern {
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/599e95f78e3f0b0001989fe9_geometric-pattern.png"), linear-gradient(323deg, #184fc2 20%, #2687c7);
+  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/599e95f78e3f0b0001989fe9_geometric-pattern.png"), linear-gradient(323deg, #191717 20%, #2687c7);
   background-position: 50%, 0 0;
   background-size: contain, auto;
 }
@@ -4932,7 +4932,7 @@ blockquote {
 }
 
 .blue {
-  color: #184fc2;
+  color: #191717;
 }
 
 .important-headline {
@@ -4995,7 +4995,7 @@ blockquote {
 }
 
 .faq-link-block:hover {
-  color: #184fc2;
+  color: #191717;
 }
 
 .faq-tittle {
@@ -5258,7 +5258,7 @@ blockquote {
 }
 
 .view-link:hover {
-  color: #184fc2;
+  color: #191717;
 }
 
 .contact-small-content {
@@ -6080,12 +6080,12 @@ blockquote {
   }
 
   .navigation-link:hover {
-    color: #184fc2;
+    color: #191717;
     background-color: #fff;
   }
 
   .navigation-link.w--current {
-    color: #184fc2;
+    color: #191717;
     font-family: Poppins, sans-serif;
     font-weight: 500;
   }
@@ -6235,7 +6235,7 @@ blockquote {
   }
 
   .dropdown-toggle:hover {
-    color: #184fc2;
+    color: #191717;
     background-color: #fff;
   }
 
@@ -7478,7 +7478,7 @@ blockquote {
   .facts-tittle {
     width: auto;
     float: none;
-    color: #184fc2;
+    color: #191717;
     background-color: rgba(0, 0, 0, 0);
     margin-right: 0;
     padding-bottom: 6px;
