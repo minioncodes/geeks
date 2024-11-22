@@ -4453,7 +4453,7 @@ blockquote {
 
 .banner {
   height: 800px;
-  background-image: linear-gradient(#184fc2, #184fc2);
+  background-image: linear-gradient(#a7a7a7, #191717);
   position: relative;
   overflow: hidden;
 }
