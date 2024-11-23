@@ -2462,9 +2462,9 @@ blockquote {
   width: auto;
 }
 
-.section {
+/* .section {
   padding: 100px 10px;
-}
+} */
 
 .section.products {
   background-image: linear-gradient(#a7a7a7, #191717);
