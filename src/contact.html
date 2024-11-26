@@ -258,7 +258,7 @@ footer {
     
         <section class="contact-form1">
           <h2>Send Us a Message</h2>
-          <form action="#" method="POST">
+          <form action="https://script.google.com/macros/s/AKfycbyqUGGcnUWuJk5y8STogHOIrBapK7u546lCnA9MHdouABr79cBTCWSK62CtDhX7UFY/exec" method="POST" name="contact-form">
             <label for="name">Full Name</label>
             <input type="text" id="name" name="name" placeholder="Your Name" required>
     
@@ -268,7 +268,7 @@ footer {
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
     
-            <button type="submit">Send Message</button>
+            <button type="submit" value="submit">Send Message</button>
           </form>
         </section>
       </main>
@@ -377,6 +377,20 @@ footer {
             </div>
         </div>
     </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyqUGGcnUWuJk5y8STogHOIrBapK7u546lCnA9MHdouABr79cBTCWSK62CtDhX7UFY/exec'
+
+
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! your form is submitted successfully." ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
+    </script>
     <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5746a22e485f3a03442bea0f"
         type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous"></script>
