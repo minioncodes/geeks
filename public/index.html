@@ -36,6 +36,12 @@
     <link href="https://cdn.prod.website-files.com/5746a22e485f3a03442bea0f/596e23118c4a20701b86aa16_Logo-C-big.png"
         rel="apple-touch-icon" />
 </head>
+<script>
+  function dismissCard() {
+      const card = document.getElementById('subscriptionCard');
+      card.style.display = 'none';
+  }
+</script>
 <!-- Begin of Chaport Live Chat code -->
 <script type="text/javascript">
   (function(w,d,v3){
@@ -47,6 +53,17 @@
   </script>
   <!-- End of Chaport Live Chat code -->
 <body>
+  <div class="subscription-card" id="subscriptionCard">
+    <div class="header">
+        <span>Subscribe Now</span>
+        <button onclick="dismissCard()">&times;</button>
+    </div>
+    <div class="content">
+      <h4>Subscription Plans Starting at Just $20!</h4>
+        <p>🚀 Unlock premium features and exclusive benefits today.</p>
+        <button>Subscribe</button>
+    </div>
+</div>
     <div class="page-wrapper">
         <div data-ix="slide-in-scroll-navigation-on-scroll" class="banner">
             <div data-collapse="medium" data-animation="default" data-duration="400"
