@@ -27,7 +27,7 @@
 }
 
 .subscription-card .header {
-  background-color: #085cf9e1;
+  background-color: #008dce;
   color: #ffffff;
   padding: 10px 15px;
   font-size: 18px;
@@ -58,7 +58,7 @@
 
 .subscription-card .content button {
   padding: 10px 20px;
-  background-color: #000000;
+  background-color: #191717;
   color: #ffffff;
   border: none;
   border-radius: 4px;
