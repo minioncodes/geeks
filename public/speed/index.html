@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Speed Test</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Internet Speed Test</h1>
+        <button id="startTest">Start Test</button>
+        <div class="meter-container">
+            <div class="meter">
+                <div class="needle" id="downloadNeedle"></div>
+                <div class="speed-label">Download Speed</div>
+                <div class="speed-value" id="downloadSpeed">0 Mbps</div>
+            </div>
+            <div class="meter">
+                <div class="needle" id="pingNeedle"></div>
+                <div class="speed-label">Ping</div>
+                <div class="speed-value" id="pingValue">0 ms</div>
+            </div>
+            <div class="meter">
+                <div class="needle" id="uploadNeedle"></div>
+                <div class="speed-label">Upload Speed</div>
+                <div class="speed-value" id="uploadSpeed">0 Mbps</div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/script.js"></script>
+</body>
+</html>
