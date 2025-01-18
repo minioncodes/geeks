@@ -3751,6 +3751,8 @@ blockquote {
 }
 
 .navbar {
+    position: fixed; /* Or sticky, depending on your design */
+    z-index: 1000; /* Lower than the modal's z-index */
   letter-spacing: 1px;
   text-transform: uppercase;
   background-color: rgba(221, 221, 221, 0);
@@ -6127,6 +6129,8 @@ blockquote {
   }
 
   .navbar {
+    position: fixed; /* Or sticky, depending on your design */
+    z-index: 1000; /* Lower than the modal's z-index */
     padding-top: 10px;
     padding-bottom: 10px;
   }
