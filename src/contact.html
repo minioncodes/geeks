@@ -512,56 +512,89 @@
           </div>
           <div class="contact-form line w-form">
             <form
-              id="email-form"
-              name="email-form"
-              data-name="Email Form"
-              method="get"
-              data-wf-page-id="5cd35beef9a56d52e668096d"
-              data-wf-element-id="07273205-a2ad-39de-5c50-78452eb09f71"
-              aria-label="Email Form"
-            >
-              <input
-                class="field w-input"
-                maxlength="256"
-                name="Name"
-                data-name="Name"
-                placeholder="Enter your name"
-                type="text"
-                id="Name-7"
-                required=""
-              /><input
-                class="field w-input"
-                maxlength="256"
-                name="Email-Address"
-                data-name="Email Address"
-                placeholder="Enter your email address"
-                type="text"
-                id="Email-Address"
-                required=""
-              /><input
-                class="field w-input"
-                maxlength="256"
-                name="name-3"
-                data-name="Name 3"
-                placeholder="Enter your phone"
-                type="text"
-                id="name-3"
-              /><input
-                class="field area w-input"
-                maxlength="256"
-                name="Messagge"
-                data-name="Messagge"
-                placeholder="Enter message"
-                type="email"
-                id="Messagge"
-                required=""
-              /><input
-                type="submit"
-                data-wait="Please wait..."
-                class="button submit-button w-button"
-                value="Send Message"
-              />
-            </form>
+            id="email-form"
+            name="email-form"
+            data-name="Email Form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            aria-label="Email Form"
+          >
+            <input type="hidden" name="access_key" value="09caf8ee-f770-42db-98ca-60f90c2c7dd4">
+            <input
+              class="field w-input"
+              maxlength="256"
+              name="Name"
+              data-name="Name"
+              placeholder="Enter your name"
+              type="text"
+              id="Name-7"
+              required
+            />
+            <input
+              class="field w-input"
+              maxlength="256"
+              name="Email"
+              data-name="Email Address"
+              placeholder="Enter your email address"
+              type="text"
+              id="Email-Address"
+              required
+            />
+            <input
+              class="field w-input"
+              maxlength="256"
+              name="Phone"
+              data-name="Phone"
+              placeholder="Enter your phone"
+              type="text"
+              required
+              id="name-3"
+            />
+            <input
+              class="field area w-input"
+              maxlength="256"
+              name="Messagge"
+              data-name="Messagge"
+              placeholder="Enter message"
+              type="text"
+              id="Messagge"
+              required
+            />
+            <input
+              type="submit"
+              data-wait="Please wait..."
+              class="button submit-button w-button"
+              value="Send Message"
+            />
+          </form>
+          
+          <script>
+            document.getElementById("email-form").addEventListener("submit", function (event) {
+              event.preventDefault(); // Prevent default behavior to handle it manually
+          
+              // Collect form data
+              const formData = new FormData(this);
+          
+              // Send the data using Fetch API
+              fetch(this.action, {
+                method: this.method,
+                body: formData,
+              })
+                .then((response) => {
+                  if (response.ok) {
+                    alert("Thank you! Your message has been sent successfully.");
+                    location.reload(); // Reload the page
+                  } else {
+                    alert("Oops! Something went wrong. Please try again.");
+                  }
+                })
+                .catch(() => {
+                  alert("Oops! Something went wrong. Please check your internet connection and try again.");
+                });
+            });
+          </script>
+          
+
             <div
               class="success-message w-form-done"
               tabindex="-1"
@@ -764,8 +797,8 @@
                 <input
                   class="field new w-input"
                   maxlength="256"
-                  name="name-5"
-                  data-name="Name 5"
+                  name="Name"
+                  data-name="Name"
                   placeholder="Enter your name"
                   type="text"
                   id="name-5"
@@ -773,8 +806,8 @@
                 /><input
                   class="field new w-input"
                   maxlength="256"
-                  name="name-6"
-                  data-name="Name 6"
+                  name="Email"
+                  data-name="Email"
                   placeholder="Enter your email add"
                   type="text"
                   id="name-6"
