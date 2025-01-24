@@ -1,12 +1,12 @@
 {
-  "name": "geeks",
+  "name": "QuickSquad",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve && nodemon server.js",
+    "start": "eleventy --serve && nodemon email.js",
     "build": "eleventy",
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon email.js"
   },
   "keywords": [],
   "author": "",
