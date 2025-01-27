@@ -4809,7 +4809,7 @@ blockquote {
   z-index: 1000;
   width: 600px;
   height: 200px;
-  background-image: linear-gradient(rgb(193 193 193 / 95%), rgb(43 43 43 / 95%)), url(https://assets-global.website-files.com/5746a22…/58c6f82…_shutterstock_173449409-compressed.jpg);
+  background-image: linear-gradient(#007bff, #ffffff);
   background-position: 0 0, 50%;
   background-size: auto, cover;
   border-top-left-radius: 10px;
