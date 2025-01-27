@@ -1336,69 +1336,79 @@
         L = Array.isArray,
         D = Object.keys,
         G = i.bind,
-        F = (e.each = e.forEach = function (_, N, U) {
-          if (_ == null) return _;
-          if (E && _.forEach === E) _.forEach(N, U);
-          else if (_.length === +_.length) {
-            for (var H = 0, te = _.length; H < te; H++)
-              if (N.call(U, _[H], H, _) === t) return;
-          } else
-            for (var ne = e.keys(_), H = 0, te = ne.length; H < te; H++)
-              if (N.call(U, _[ne[H]], ne[H], _) === t) return;
-          return _;
-        });
-      (e.map = e.collect = function (_, N, U) {
-        var H = [];
-        return _ == null
-          ? H
-          : f && _.map === f
-          ? _.map(N, U)
-          : (F(_, function (te, ne, W) {
-              H.push(N.call(U, te, ne, W));
-            }),
-            H);
-      }),
-        (e.find = e.detect = function (_, N, U) {
-          var H;
-          return (
-            K(_, function (te, ne, W) {
-              if (N.call(U, te, ne, W)) return (H = te), !0;
-            }),
-            H
-          );
-        }),
-        (e.filter = e.select = function (_, N, U) {
+        F =
+          (e.each =
+          e.forEach =
+            function (_, N, U) {
+              if (_ == null) return _;
+              if (E && _.forEach === E) _.forEach(N, U);
+              else if (_.length === +_.length) {
+                for (var H = 0, te = _.length; H < te; H++)
+                  if (N.call(U, _[H], H, _) === t) return;
+              } else
+                for (var ne = e.keys(_), H = 0, te = ne.length; H < te; H++)
+                  if (N.call(U, _[ne[H]], ne[H], _) === t) return;
+              return _;
+            });
+      (e.map = e.collect =
+        function (_, N, U) {
           var H = [];
           return _ == null
             ? H
-            : y && _.filter === y
-            ? _.filter(N, U)
+            : f && _.map === f
+            ? _.map(N, U)
             : (F(_, function (te, ne, W) {
-                N.call(U, te, ne, W) && H.push(te);
+                H.push(N.call(U, te, ne, W));
               }),
               H);
-        });
-      var K = (e.some = e.any = function (_, N, U) {
-        N || (N = e.identity);
-        var H = !1;
-        return _ == null
-          ? H
-          : C && _.some === C
-          ? _.some(N, U)
-          : (F(_, function (te, ne, W) {
-              if (H || (H = N.call(U, te, ne, W))) return t;
-            }),
-            !!H);
-      });
-      (e.contains = e.include = function (_, N) {
-        return _ == null
-          ? !1
-          : A && _.indexOf === A
-          ? _.indexOf(N) != -1
-          : K(_, function (U) {
-              return U === N;
-            });
-      }),
+        }),
+        (e.find = e.detect =
+          function (_, N, U) {
+            var H;
+            return (
+              K(_, function (te, ne, W) {
+                if (N.call(U, te, ne, W)) return (H = te), !0;
+              }),
+              H
+            );
+          }),
+        (e.filter = e.select =
+          function (_, N, U) {
+            var H = [];
+            return _ == null
+              ? H
+              : y && _.filter === y
+              ? _.filter(N, U)
+              : (F(_, function (te, ne, W) {
+                  N.call(U, te, ne, W) && H.push(te);
+                }),
+                H);
+          });
+      var K =
+        (e.some =
+        e.any =
+          function (_, N, U) {
+            N || (N = e.identity);
+            var H = !1;
+            return _ == null
+              ? H
+              : C && _.some === C
+              ? _.some(N, U)
+              : (F(_, function (te, ne, W) {
+                  if (H || (H = N.call(U, te, ne, W))) return t;
+                }),
+                !!H);
+          });
+      (e.contains = e.include =
+        function (_, N) {
+          return _ == null
+            ? !1
+            : A && _.indexOf === A
+            ? _.indexOf(N) != -1
+            : K(_, function (U) {
+                return U === N;
+              });
+        }),
         (e.delay = function (_, N) {
           var U = s.call(arguments, 2);
           return setTimeout(function () {
@@ -1507,29 +1517,29 @@
               g
                 ? (ne +=
                     `'+
-  ((__t=(` +
+((__t=(` +
                     g +
                     `))==null?'':_.escape(__t))+
-  '`)
+'`)
                 : c
                 ? (ne +=
                     `'+
-  ((__t=(` +
+((__t=(` +
                     c +
                     `))==null?'':__t)+
-  '`)
+'`)
                 : M &&
                   (ne +=
                     `';
-  ` +
+` +
                     M +
                     `
-  __p+='`),
+__p+='`),
               v
             );
           }),
             (ne += `';
-  `);
+`);
           var W = N.variable;
           if (W) {
             if (!R.test(W))
@@ -1537,17 +1547,17 @@
           } else
             (ne =
               `with(obj||{}){
-  ` +
+` +
               ne +
               `}
-  `),
+`),
               (W = "obj");
           ne =
             `var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
-  ` +
+` +
             ne +
             `return __p;
-  `;
+`;
           var X;
           try {
             X = new Function(N.variable || "obj", "_", ne);
@@ -1562,7 +1572,7 @@
               "function(" +
               W +
               `){
-  ` +
+` +
               ne +
               "}"),
             h
@@ -3541,7 +3551,12 @@
   var Yo = l((Be) => {
     "use strict";
     Be.__esModule = !0;
-    Be.compose = Be.applyMiddleware = Be.bindActionCreators = Be.combineReducers = Be.createStore = void 0;
+    Be.compose =
+      Be.applyMiddleware =
+      Be.bindActionCreators =
+      Be.combineReducers =
+      Be.createStore =
+        void 0;
     var Kx = Vo(),
       Yx = Zt(Kx),
       Qx = Af(),
@@ -5112,12 +5127,32 @@
       XR = "[object Uint16Array]",
       BR = "[object Uint32Array]",
       me = {};
-    me[FR] = me[kR] = me[GR] = me[UR] = me[VR] = me[WR] = me[HR] = me[XR] = me[
-      BR
-    ] = !0;
-    me[IR] = me[wR] = me[qR] = me[TR] = me[DR] = me[xR] = me[OR] = me[AR] = me[
-      SR
-    ] = me[CR] = me[RR] = me[LR] = me[NR] = me[PR] = me[MR] = !1;
+    me[FR] =
+      me[kR] =
+      me[GR] =
+      me[UR] =
+      me[VR] =
+      me[WR] =
+      me[HR] =
+      me[XR] =
+      me[BR] =
+        !0;
+    me[IR] =
+      me[wR] =
+      me[qR] =
+      me[TR] =
+      me[DR] =
+      me[xR] =
+      me[OR] =
+      me[AR] =
+      me[SR] =
+      me[CR] =
+      me[RR] =
+      me[LR] =
+      me[NR] =
+      me[PR] =
+      me[MR] =
+        !1;
     function jR(e) {
       return _R(e) && bR(e.length) && !!me[ER(e)];
     }
@@ -5549,7 +5584,8 @@
   });
   var Eh = l((n5, yh) => {
     var PN = mh(),
-      MN = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g,
+      MN =
+        /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g,
       qN = /\\(\\)?/g,
       DN = PN(function (e) {
         var t = [];
@@ -6366,7 +6402,14 @@
   var Tg = l((Se) => {
     "use strict";
     Object.defineProperty(Se, "__esModule", { value: !0 });
-    Se.renderPlugin = Se.getPluginOrigin = Se.getPluginDuration = Se.getPluginDestination = Se.getPluginConfig = Se.createPluginInstance = Se.clearPlugin = void 0;
+    Se.renderPlugin =
+      Se.getPluginOrigin =
+      Se.getPluginDuration =
+      Se.getPluginDestination =
+      Se.getPluginConfig =
+      Se.createPluginInstance =
+      Se.clearPlugin =
+        void 0;
     var Tq = (e) => e.value;
     Se.getPluginConfig = Tq;
     var xq = (e, t) => {
@@ -6400,7 +6443,14 @@
   var Og = l((Ce) => {
     "use strict";
     Object.defineProperty(Ce, "__esModule", { value: !0 });
-    Ce.renderPlugin = Ce.getPluginOrigin = Ce.getPluginDuration = Ce.getPluginDestination = Ce.getPluginConfig = Ce.createPluginInstance = Ce.clearPlugin = void 0;
+    Ce.renderPlugin =
+      Ce.getPluginOrigin =
+      Ce.getPluginDuration =
+      Ce.getPluginDestination =
+      Ce.getPluginConfig =
+      Ce.createPluginInstance =
+      Ce.clearPlugin =
+        void 0;
     var Lq = (e) => document.querySelector(`[data-w-id="${e}"]`),
       Nq = () => window.Webflow.require("spline"),
       Pq = (e, t) => e.filter((r) => !t.includes(r)),
@@ -6473,7 +6523,13 @@
   var Sg = l((Oe) => {
     "use strict";
     Object.defineProperty(Oe, "__esModule", { value: !0 });
-    Oe.getPluginOrigin = Oe.getPluginDuration = Oe.getPluginDestination = Oe.getPluginConfig = Oe.createPluginInstance = Oe.clearPlugin = void 0;
+    Oe.getPluginOrigin =
+      Oe.getPluginDuration =
+      Oe.getPluginDestination =
+      Oe.getPluginConfig =
+      Oe.createPluginInstance =
+      Oe.clearPlugin =
+        void 0;
     Oe.normalizeColor = Ag;
     Oe.renderPlugin = void 0;
     function Ag(e) {
@@ -7578,42 +7634,50 @@
         }),
         (pD = Object.keys(Qa));
       (yD = "\\(([^)]+)\\)"), (ED = /^rgb/), (bD = RegExp(`rgba?${yD}`));
-      pm = ({ effect: e, actionTypeId: t, elementApi: r }) => (n) => {
-        switch (t) {
-          case lr:
-          case fr:
-          case dr:
-          case Jr:
-            e(n, At, r);
-            break;
-          case en:
-            e(n, Qr, r);
-            break;
-          case tn:
-            e(n, $r, r);
-            break;
-          case um:
-            e(n, ci, r);
-            break;
-          case pr:
-            e(n, lt, r), e(n, ft, r);
-            break;
-          case vr:
-          case hr:
-          case gr:
-            e(n, Ka[t], r);
-            break;
-          case pi:
-            e(n, li, r);
-            break;
-        }
-      };
+      pm =
+        ({ effect: e, actionTypeId: t, elementApi: r }) =>
+        (n) => {
+          switch (t) {
+            case lr:
+            case fr:
+            case dr:
+            case Jr:
+              e(n, At, r);
+              break;
+            case en:
+              e(n, Qr, r);
+              break;
+            case tn:
+              e(n, $r, r);
+              break;
+            case um:
+              e(n, ci, r);
+              break;
+            case pr:
+              e(n, lt, r), e(n, ft, r);
+              break;
+            case vr:
+            case hr:
+            case gr:
+              e(n, Ka[t], r);
+              break;
+            case pi:
+              e(n, li, r);
+              break;
+          }
+        };
     });
   var Vt = l((Fe) => {
     "use strict";
     var mr = mn().default;
     Object.defineProperty(Fe, "__esModule", { value: !0 });
-    Fe.IX2VanillaUtils = Fe.IX2VanillaPlugins = Fe.IX2ElementsReducer = Fe.IX2Easings = Fe.IX2EasingUtils = Fe.IX2BrowserSupport = void 0;
+    Fe.IX2VanillaUtils =
+      Fe.IX2VanillaPlugins =
+      Fe.IX2ElementsReducer =
+      Fe.IX2Easings =
+      Fe.IX2EasingUtils =
+      Fe.IX2BrowserSupport =
+        void 0;
     var qD = mr((ni(), it(dg)));
     Fe.IX2BrowserSupport = qD;
     var DD = mr((Ra(), it(Kr)));
@@ -9094,7 +9158,7 @@
         (ub = "COMPONENT_INACTIVE"),
         ({ COLON_DELIMITER: jE } = Pe),
         ({ getNamespacedParameterId: zE } = nb.IX2VanillaUtils),
-        (cb = (e) => (t) => (typeof t == "object" && e(t) ? !0 : t)),
+        (cb = (e) => (t) => typeof t == "object" && e(t) ? !0 : t),
         (on = cb(({ element: e, nativeEvent: t }) => e === t.target)),
         (HU = cb(({ element: e, nativeEvent: t }) => e.contains(t.target))),
         (dt = (0, eb.default)([on, HU])),
@@ -9142,7 +9206,7 @@
             i
           );
         }),
-        (tt = (e, t) => (r, n) => (e(r, n) === !0 ? t(r, n) : n)),
+        (tt = (e, t) => (r, n) => e(r, n) === !0 ? t(r, n) : n),
         (an = { handler: tt(dt, Xe) }),
         (fb = { ...an, types: [Is, ub].join(" ") }),
         (ws = [
@@ -9229,34 +9293,36 @@
             n
           );
         }),
-        (QE = (e) => (t, r = {}) => {
-          let { stiffScrollTop: n, scrollHeight: i, innerHeight: o } = nn(),
-            {
-              event: { config: s, eventTypeId: a },
-            } = t,
-            { scrollOffsetValue: u, scrollOffsetUnit: d } = s,
-            E = d === "PX",
-            f = i - o,
-            I = Number((n / f).toFixed(2));
-          if (r && r.percentTop === I) return r;
-          let m = (E ? u : (o * (u || 0)) / 100) / f,
-            y,
-            w,
-            C = 0;
-          r &&
-            ((y = I > r.percentTop),
-            (w = r.scrollingDown !== y),
-            (C = w ? I : r.anchorTop));
-          let A = a === ib ? I >= C + m : I <= C - m,
-            P = {
-              ...r,
-              percentTop: I,
-              inBounds: A,
-              anchorTop: C,
-              scrollingDown: y,
-            };
-          return (r && A && (w || P.inBounds !== r.inBounds) && e(t, P)) || P;
-        }),
+        (QE =
+          (e) =>
+          (t, r = {}) => {
+            let { stiffScrollTop: n, scrollHeight: i, innerHeight: o } = nn(),
+              {
+                event: { config: s, eventTypeId: a },
+              } = t,
+              { scrollOffsetValue: u, scrollOffsetUnit: d } = s,
+              E = d === "PX",
+              f = i - o,
+              I = Number((n / f).toFixed(2));
+            if (r && r.percentTop === I) return r;
+            let m = (E ? u : (o * (u || 0)) / 100) / f,
+              y,
+              w,
+              C = 0;
+            r &&
+              ((y = I > r.percentTop),
+              (w = r.scrollingDown !== y),
+              (C = w ? I : r.anchorTop));
+            let A = a === ib ? I >= C + m : I <= C - m,
+              P = {
+                ...r,
+                percentTop: I,
+                inBounds: A,
+                anchorTop: C,
+                scrollingDown: y,
+              };
+            return (r && A && (w || P.inBounds !== r.inBounds) && e(t, P)) || P;
+          }),
         (QU = (e, t) =>
           e.left > t.left &&
           e.left < t.right &&
@@ -9270,10 +9336,12 @@
           let n = { started: !0 };
           return r || e(t), n;
         }),
-        ($E = (e) => (t, r = { clickCount: 0 }) => {
-          let n = { clickCount: (r.clickCount % 2) + 1 };
-          return (n.clickCount !== r.clickCount && e(t, n)) || n;
-        }),
+        ($E =
+          (e) =>
+          (t, r = { clickCount: 0 }) => {
+            let n = { clickCount: (r.clickCount % 2) + 1 };
+            return (n.clickCount !== r.clickCount && e(t, n)) || n;
+          }),
         (Oi = (e = !0) => ({
           ...fb,
           handler: tt(
@@ -10739,8 +10807,9 @@
                       var ue =
                           V.parents().length === 1 &&
                           V.parents("svg").length === 1,
-                        oe = V.parents(".w-editor-bem-EditorHoverControls")
-                          .length;
+                        oe = V.parents(
+                          ".w-editor-bem-EditorHoverControls"
+                        ).length;
                       if (ue || oe) return;
                     }
                     R(c);
@@ -10928,9 +10997,12 @@
               "Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue."
             );
           }, 100);
-        r.ready = r.design = r.preview = function () {
-          P(), !I && !m && D();
-        };
+        r.ready =
+          r.design =
+          r.preview =
+            function () {
+              P(), !I && !m && D();
+            };
         function P() {
           (u = e("html").attr("data-wf-site")),
             (y = "https://webflow.com/api/v1/form/" + u),
@@ -12936,17 +13008,17 @@
  * @license MIT
  */
 /*! Bundled license information:
-  
-  timm/lib/timm.js:
-    (*!
-     * Timm
-     *
-     * Immutability helpers with fast reads and acceptable writes.
-     *
-     * @copyright Guillermo Grau Panea 2016
-     * @license MIT
-     *)
-  */
+
+timm/lib/timm.js:
+  (*!
+   * Timm
+   *
+   * Immutability helpers with fast reads and acceptable writes.
+   *
+   * @copyright Guillermo Grau Panea 2016
+   * @license MIT
+   *)
+*/
 /**
  * ----------------------------------------------------------------------
  * Webflow: Interactions 2.0: Init
@@ -31244,8 +31316,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56db2a4680968|c5361d63-6808-54fd-97f1-13fa77b4b7b9",
+                  id: "5cd35beef9a56db2a4680968|c5361d63-6808-54fd-97f1-13fa77b4b7b9",
                 },
                 value: 0,
                 unit: "",
@@ -31259,8 +31330,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56db2a4680968|c5361d63-6808-54fd-97f1-13fa77b4b7b9",
+                  id: "5cd35beef9a56db2a4680968|c5361d63-6808-54fd-97f1-13fa77b4b7b9",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -31503,8 +31573,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56db2a4680968|c5361d63-6808-54fd-97f1-13fa77b4b7b9",
+                  id: "5cd35beef9a56db2a4680968|c5361d63-6808-54fd-97f1-13fa77b4b7b9",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -31520,8 +31589,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56db2a4680968|c5361d63-6808-54fd-97f1-13fa77b4b7b9",
+                  id: "5cd35beef9a56db2a4680968|c5361d63-6808-54fd-97f1-13fa77b4b7b9",
                 },
                 value: 1,
                 unit: "",
@@ -31547,8 +31615,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d108a680975|8a9b11df-0c0a-3211-43ec-9fc6d1f2d21d",
+                  id: "5cd35beef9a56d108a680975|8a9b11df-0c0a-3211-43ec-9fc6d1f2d21d",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -31564,8 +31631,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d108a680975|a9e817c6-4fe2-64cc-eeab-ce4b7893a06f",
+                  id: "5cd35beef9a56d108a680975|a9e817c6-4fe2-64cc-eeab-ce4b7893a06f",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -31581,8 +31647,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d108a680975|a9e817c6-4fe2-64cc-eeab-ce4b7893a06f",
+                  id: "5cd35beef9a56d108a680975|a9e817c6-4fe2-64cc-eeab-ce4b7893a06f",
                 },
                 value: 0,
                 unit: "",
@@ -31596,8 +31661,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d108a680975|a211fa36-404d-5f6b-fa87-b4f665689a25",
+                  id: "5cd35beef9a56d108a680975|a211fa36-404d-5f6b-fa87-b4f665689a25",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -31613,8 +31677,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d108a680975|a211fa36-404d-5f6b-fa87-b4f665689a25",
+                  id: "5cd35beef9a56d108a680975|a211fa36-404d-5f6b-fa87-b4f665689a25",
                 },
                 value: 0,
                 unit: "",
@@ -31628,8 +31691,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d108a680975|98ff7284-5aa0-9c5e-d1b7-c2c367dab5e6",
+                  id: "5cd35beef9a56d108a680975|98ff7284-5aa0-9c5e-d1b7-c2c367dab5e6",
                 },
                 value: 0,
                 unit: "",
@@ -31643,8 +31705,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d108a680975|98ff7284-5aa0-9c5e-d1b7-c2c367dab5e6",
+                  id: "5cd35beef9a56d108a680975|98ff7284-5aa0-9c5e-d1b7-c2c367dab5e6",
                 },
                 xValue: 40,
                 xUnit: "PX",
@@ -31660,8 +31721,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d108a680975|8a9b11df-0c0a-3211-43ec-9fc6d1f2d21d",
+                  id: "5cd35beef9a56d108a680975|8a9b11df-0c0a-3211-43ec-9fc6d1f2d21d",
                 },
                 value: 0,
                 unit: "",
@@ -31679,8 +31739,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d108a680975|8a9b11df-0c0a-3211-43ec-9fc6d1f2d21d",
+                  id: "5cd35beef9a56d108a680975|8a9b11df-0c0a-3211-43ec-9fc6d1f2d21d",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -31696,8 +31755,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d108a680975|98ff7284-5aa0-9c5e-d1b7-c2c367dab5e6",
+                  id: "5cd35beef9a56d108a680975|98ff7284-5aa0-9c5e-d1b7-c2c367dab5e6",
                 },
                 value: 1,
                 unit: "",
@@ -31711,8 +31769,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d108a680975|98ff7284-5aa0-9c5e-d1b7-c2c367dab5e6",
+                  id: "5cd35beef9a56d108a680975|98ff7284-5aa0-9c5e-d1b7-c2c367dab5e6",
                 },
                 xValue: 0,
                 xUnit: "PX",
@@ -31728,8 +31785,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d108a680975|8a9b11df-0c0a-3211-43ec-9fc6d1f2d21d",
+                  id: "5cd35beef9a56d108a680975|8a9b11df-0c0a-3211-43ec-9fc6d1f2d21d",
                 },
                 value: 1,
                 unit: "",
@@ -31747,8 +31803,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d108a680975|a211fa36-404d-5f6b-fa87-b4f665689a25",
+                  id: "5cd35beef9a56d108a680975|a211fa36-404d-5f6b-fa87-b4f665689a25",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -31764,8 +31819,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d108a680975|a211fa36-404d-5f6b-fa87-b4f665689a25",
+                  id: "5cd35beef9a56d108a680975|a211fa36-404d-5f6b-fa87-b4f665689a25",
                 },
                 value: 1,
                 unit: "",
@@ -31783,8 +31837,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d108a680975|a9e817c6-4fe2-64cc-eeab-ce4b7893a06f",
+                  id: "5cd35beef9a56d108a680975|a9e817c6-4fe2-64cc-eeab-ce4b7893a06f",
                 },
                 value: 1,
                 unit: "",
@@ -31798,8 +31851,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d108a680975|a9e817c6-4fe2-64cc-eeab-ce4b7893a06f",
+                  id: "5cd35beef9a56d108a680975|a9e817c6-4fe2-64cc-eeab-ce4b7893a06f",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -31933,8 +31985,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d6053680977|afce977a-98b6-ee78-0fe5-e8c5fca07afb",
+                  id: "5cd35beef9a56d6053680977|afce977a-98b6-ee78-0fe5-e8c5fca07afb",
                 },
                 value: 0,
                 unit: "",
@@ -31948,8 +31999,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d6053680977|505da9b3-ef90-4073-590e-34632934ec8d",
+                  id: "5cd35beef9a56d6053680977|505da9b3-ef90-4073-590e-34632934ec8d",
                 },
                 value: 0,
                 unit: "",
@@ -31963,8 +32013,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d6053680977|505da9b3-ef90-4073-590e-34632934ec8d",
+                  id: "5cd35beef9a56d6053680977|505da9b3-ef90-4073-590e-34632934ec8d",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -31980,8 +32029,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d6053680977|084bec40-9ba5-f445-55af-d0c76becce8a",
+                  id: "5cd35beef9a56d6053680977|084bec40-9ba5-f445-55af-d0c76becce8a",
                 },
                 value: 0,
                 unit: "",
@@ -31995,8 +32043,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d6053680977|084bec40-9ba5-f445-55af-d0c76becce8a",
+                  id: "5cd35beef9a56d6053680977|084bec40-9ba5-f445-55af-d0c76becce8a",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -32012,8 +32059,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d6053680977|afce977a-98b6-ee78-0fe5-e8c5fca07afb",
+                  id: "5cd35beef9a56d6053680977|afce977a-98b6-ee78-0fe5-e8c5fca07afb",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -32033,8 +32079,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d6053680977|afce977a-98b6-ee78-0fe5-e8c5fca07afb",
+                  id: "5cd35beef9a56d6053680977|afce977a-98b6-ee78-0fe5-e8c5fca07afb",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -32050,8 +32095,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d6053680977|afce977a-98b6-ee78-0fe5-e8c5fca07afb",
+                  id: "5cd35beef9a56d6053680977|afce977a-98b6-ee78-0fe5-e8c5fca07afb",
                 },
                 value: 1,
                 unit: "",
@@ -32069,8 +32113,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d6053680977|084bec40-9ba5-f445-55af-d0c76becce8a",
+                  id: "5cd35beef9a56d6053680977|084bec40-9ba5-f445-55af-d0c76becce8a",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -32086,8 +32129,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d6053680977|084bec40-9ba5-f445-55af-d0c76becce8a",
+                  id: "5cd35beef9a56d6053680977|084bec40-9ba5-f445-55af-d0c76becce8a",
                 },
                 value: 1,
                 unit: "",
@@ -32105,8 +32147,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d6053680977|505da9b3-ef90-4073-590e-34632934ec8d",
+                  id: "5cd35beef9a56d6053680977|505da9b3-ef90-4073-590e-34632934ec8d",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -32122,8 +32163,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d6053680977|505da9b3-ef90-4073-590e-34632934ec8d",
+                  id: "5cd35beef9a56d6053680977|505da9b3-ef90-4073-590e-34632934ec8d",
                 },
                 value: 1,
                 unit: "",
@@ -32149,8 +32189,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56dc7d7680973|6abea1c2-d8a8-f5ea-6542-e43a1dda9171",
+                  id: "5cd35beef9a56dc7d7680973|6abea1c2-d8a8-f5ea-6542-e43a1dda9171",
                 },
                 value: 0,
                 unit: "",
@@ -32164,8 +32203,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56dc7d7680973|bb69c7e5-c3ec-cb71-e05c-4e1f4e96e1af",
+                  id: "5cd35beef9a56dc7d7680973|bb69c7e5-c3ec-cb71-e05c-4e1f4e96e1af",
                 },
                 yValue: 30,
                 xUnit: "PX",
@@ -32181,8 +32219,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56dc7d7680973|bb69c7e5-c3ec-cb71-e05c-4e1f4e96e1af",
+                  id: "5cd35beef9a56dc7d7680973|bb69c7e5-c3ec-cb71-e05c-4e1f4e96e1af",
                 },
                 value: 0,
                 unit: "",
@@ -32196,8 +32233,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56dc7d7680973|f52e93b2-326f-cfde-57a1-3334202fa89d",
+                  id: "5cd35beef9a56dc7d7680973|f52e93b2-326f-cfde-57a1-3334202fa89d",
                 },
                 value: 0,
                 unit: "",
@@ -32211,8 +32247,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56dc7d7680973|f52e93b2-326f-cfde-57a1-3334202fa89d",
+                  id: "5cd35beef9a56dc7d7680973|f52e93b2-326f-cfde-57a1-3334202fa89d",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -32228,8 +32263,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56dc7d7680973|ba0b12ab-80c6-cfd9-d856-e1cce82f573c",
+                  id: "5cd35beef9a56dc7d7680973|ba0b12ab-80c6-cfd9-d856-e1cce82f573c",
                 },
                 xValue: 20,
                 xUnit: "PX",
@@ -32245,8 +32279,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56dc7d7680973|ba0b12ab-80c6-cfd9-d856-e1cce82f573c",
+                  id: "5cd35beef9a56dc7d7680973|ba0b12ab-80c6-cfd9-d856-e1cce82f573c",
                 },
                 value: 0,
                 unit: "",
@@ -32260,8 +32293,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56dc7d7680973|6abea1c2-d8a8-f5ea-6542-e43a1dda9171",
+                  id: "5cd35beef9a56dc7d7680973|6abea1c2-d8a8-f5ea-6542-e43a1dda9171",
                 },
                 xValue: 20,
                 xUnit: "PX",
@@ -32281,8 +32313,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56dc7d7680973|6abea1c2-d8a8-f5ea-6542-e43a1dda9171",
+                  id: "5cd35beef9a56dc7d7680973|6abea1c2-d8a8-f5ea-6542-e43a1dda9171",
                 },
                 xValue: 0,
                 xUnit: "PX",
@@ -32298,8 +32329,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56dc7d7680973|bb69c7e5-c3ec-cb71-e05c-4e1f4e96e1af",
+                  id: "5cd35beef9a56dc7d7680973|bb69c7e5-c3ec-cb71-e05c-4e1f4e96e1af",
                 },
                 value: 1,
                 unit: "",
@@ -32313,8 +32343,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56dc7d7680973|bb69c7e5-c3ec-cb71-e05c-4e1f4e96e1af",
+                  id: "5cd35beef9a56dc7d7680973|bb69c7e5-c3ec-cb71-e05c-4e1f4e96e1af",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -32330,8 +32359,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56dc7d7680973|6abea1c2-d8a8-f5ea-6542-e43a1dda9171",
+                  id: "5cd35beef9a56dc7d7680973|6abea1c2-d8a8-f5ea-6542-e43a1dda9171",
                 },
                 value: 1,
                 unit: "",
@@ -32349,8 +32377,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56dc7d7680973|ba0b12ab-80c6-cfd9-d856-e1cce82f573c",
+                  id: "5cd35beef9a56dc7d7680973|ba0b12ab-80c6-cfd9-d856-e1cce82f573c",
                 },
                 xValue: 0,
                 xUnit: "PX",
@@ -32366,8 +32393,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56dc7d7680973|ba0b12ab-80c6-cfd9-d856-e1cce82f573c",
+                  id: "5cd35beef9a56dc7d7680973|ba0b12ab-80c6-cfd9-d856-e1cce82f573c",
                 },
                 value: 1,
                 unit: "",
@@ -32385,8 +32411,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56dc7d7680973|f52e93b2-326f-cfde-57a1-3334202fa89d",
+                  id: "5cd35beef9a56dc7d7680973|f52e93b2-326f-cfde-57a1-3334202fa89d",
                 },
                 xValue: 0,
                 xUnit: "PX",
@@ -32402,8 +32427,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56dc7d7680973|f52e93b2-326f-cfde-57a1-3334202fa89d",
+                  id: "5cd35beef9a56dc7d7680973|f52e93b2-326f-cfde-57a1-3334202fa89d",
                 },
                 value: 1,
                 unit: "",
@@ -32429,8 +32453,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d3824680974|d01a8ba9-2a5d-d85c-927d-6c5cdf87f4b2",
+                  id: "5cd35beef9a56d3824680974|d01a8ba9-2a5d-d85c-927d-6c5cdf87f4b2",
                 },
                 value: 0,
                 unit: "",
@@ -32444,8 +32467,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d3824680974|4c2a6d99-beaa-c1fe-b48c-becba2f6b795",
+                  id: "5cd35beef9a56d3824680974|4c2a6d99-beaa-c1fe-b48c-becba2f6b795",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -32461,8 +32483,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d3824680974|4c2a6d99-beaa-c1fe-b48c-becba2f6b795",
+                  id: "5cd35beef9a56d3824680974|4c2a6d99-beaa-c1fe-b48c-becba2f6b795",
                 },
                 value: 0,
                 unit: "",
@@ -32476,8 +32497,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d3824680974|505cdb4f-d508-3ea7-1f62-5c96c39a9062",
+                  id: "5cd35beef9a56d3824680974|505cdb4f-d508-3ea7-1f62-5c96c39a9062",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -32493,8 +32513,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d3824680974|505cdb4f-d508-3ea7-1f62-5c96c39a9062",
+                  id: "5cd35beef9a56d3824680974|505cdb4f-d508-3ea7-1f62-5c96c39a9062",
                 },
                 value: 0,
                 unit: "",
@@ -32508,8 +32527,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d3824680974|d01a8ba9-2a5d-d85c-927d-6c5cdf87f4b2",
+                  id: "5cd35beef9a56d3824680974|d01a8ba9-2a5d-d85c-927d-6c5cdf87f4b2",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -32529,8 +32547,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d3824680974|d01a8ba9-2a5d-d85c-927d-6c5cdf87f4b2",
+                  id: "5cd35beef9a56d3824680974|d01a8ba9-2a5d-d85c-927d-6c5cdf87f4b2",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -32546,8 +32563,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d3824680974|d01a8ba9-2a5d-d85c-927d-6c5cdf87f4b2",
+                  id: "5cd35beef9a56d3824680974|d01a8ba9-2a5d-d85c-927d-6c5cdf87f4b2",
                 },
                 value: 1,
                 unit: "",
@@ -32565,8 +32581,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d3824680974|505cdb4f-d508-3ea7-1f62-5c96c39a9062",
+                  id: "5cd35beef9a56d3824680974|505cdb4f-d508-3ea7-1f62-5c96c39a9062",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -32582,8 +32597,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d3824680974|505cdb4f-d508-3ea7-1f62-5c96c39a9062",
+                  id: "5cd35beef9a56d3824680974|505cdb4f-d508-3ea7-1f62-5c96c39a9062",
                 },
                 value: 1,
                 unit: "",
@@ -32601,8 +32615,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d3824680974|4c2a6d99-beaa-c1fe-b48c-becba2f6b795",
+                  id: "5cd35beef9a56d3824680974|4c2a6d99-beaa-c1fe-b48c-becba2f6b795",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -32618,8 +32631,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d3824680974|4c2a6d99-beaa-c1fe-b48c-becba2f6b795",
+                  id: "5cd35beef9a56d3824680974|4c2a6d99-beaa-c1fe-b48c-becba2f6b795",
                 },
                 value: 1,
                 unit: "",
@@ -32694,8 +32706,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d8dc5680978|71ddbc4f-22ab-41ea-9189-067f9b127a0b",
+                  id: "5cd35beef9a56d8dc5680978|71ddbc4f-22ab-41ea-9189-067f9b127a0b",
                 },
                 value: 0,
                 unit: "",
@@ -32709,8 +32720,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d8dc5680978|df7aa773-a601-b719-2114-07643092d641",
+                  id: "5cd35beef9a56d8dc5680978|df7aa773-a601-b719-2114-07643092d641",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -32726,8 +32736,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d8dc5680978|df7aa773-a601-b719-2114-07643092d641",
+                  id: "5cd35beef9a56d8dc5680978|df7aa773-a601-b719-2114-07643092d641",
                 },
                 value: 0,
                 unit: "",
@@ -32741,8 +32750,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d8dc5680978|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
+                  id: "5cd35beef9a56d8dc5680978|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -32758,8 +32766,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d8dc5680978|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
+                  id: "5cd35beef9a56d8dc5680978|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
                 },
                 value: 0,
                 unit: "",
@@ -32773,8 +32780,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d8dc5680978|609d037e-efc7-6d36-b790-0345c1f98264",
+                  id: "5cd35beef9a56d8dc5680978|609d037e-efc7-6d36-b790-0345c1f98264",
                 },
                 value: 0,
                 unit: "",
@@ -32788,8 +32794,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d8dc5680978|609d037e-efc7-6d36-b790-0345c1f98264",
+                  id: "5cd35beef9a56d8dc5680978|609d037e-efc7-6d36-b790-0345c1f98264",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -32805,8 +32810,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d8dc5680978|71ddbc4f-22ab-41ea-9189-067f9b127a0b",
+                  id: "5cd35beef9a56d8dc5680978|71ddbc4f-22ab-41ea-9189-067f9b127a0b",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -32826,8 +32830,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d8dc5680978|71ddbc4f-22ab-41ea-9189-067f9b127a0b",
+                  id: "5cd35beef9a56d8dc5680978|71ddbc4f-22ab-41ea-9189-067f9b127a0b",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -32843,8 +32846,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d8dc5680978|71ddbc4f-22ab-41ea-9189-067f9b127a0b",
+                  id: "5cd35beef9a56d8dc5680978|71ddbc4f-22ab-41ea-9189-067f9b127a0b",
                 },
                 value: 1,
                 unit: "",
@@ -32862,8 +32864,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d8dc5680978|609d037e-efc7-6d36-b790-0345c1f98264",
+                  id: "5cd35beef9a56d8dc5680978|609d037e-efc7-6d36-b790-0345c1f98264",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -32879,8 +32880,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d8dc5680978|609d037e-efc7-6d36-b790-0345c1f98264",
+                  id: "5cd35beef9a56d8dc5680978|609d037e-efc7-6d36-b790-0345c1f98264",
                 },
                 value: 1,
                 unit: "",
@@ -32898,8 +32898,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d8dc5680978|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
+                  id: "5cd35beef9a56d8dc5680978|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -32915,8 +32914,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d8dc5680978|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
+                  id: "5cd35beef9a56d8dc5680978|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
                 },
                 value: 1,
                 unit: "",
@@ -32934,8 +32932,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d8dc5680978|df7aa773-a601-b719-2114-07643092d641",
+                  id: "5cd35beef9a56d8dc5680978|df7aa773-a601-b719-2114-07643092d641",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -32951,8 +32948,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d8dc5680978|df7aa773-a601-b719-2114-07643092d641",
+                  id: "5cd35beef9a56d8dc5680978|df7aa773-a601-b719-2114-07643092d641",
                 },
                 value: 1,
                 unit: "",
@@ -32978,8 +32974,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56df786680971|e368247c-5bb7-b7cc-276f-fc19b5974317",
+                  id: "5cd35beef9a56df786680971|e368247c-5bb7-b7cc-276f-fc19b5974317",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -32995,8 +32990,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56df786680971|d0b42926-76da-085e-480e-22e28acaf20c",
+                  id: "5cd35beef9a56df786680971|d0b42926-76da-085e-480e-22e28acaf20c",
                 },
                 value: 0,
                 unit: "",
@@ -33010,8 +33004,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56df786680971|d0b42926-76da-085e-480e-22e28acaf20c",
+                  id: "5cd35beef9a56df786680971|d0b42926-76da-085e-480e-22e28acaf20c",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -33027,8 +33020,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56df786680971|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
+                  id: "5cd35beef9a56df786680971|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
                 },
                 value: 0,
                 unit: "",
@@ -33042,8 +33034,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56df786680971|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
+                  id: "5cd35beef9a56df786680971|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -33059,8 +33050,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56df786680971|609d037e-efc7-6d36-b790-0345c1f98264",
+                  id: "5cd35beef9a56df786680971|609d037e-efc7-6d36-b790-0345c1f98264",
                 },
                 value: 0,
                 unit: "",
@@ -33074,8 +33064,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56df786680971|609d037e-efc7-6d36-b790-0345c1f98264",
+                  id: "5cd35beef9a56df786680971|609d037e-efc7-6d36-b790-0345c1f98264",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -33091,8 +33080,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56df786680971|e368247c-5bb7-b7cc-276f-fc19b5974317",
+                  id: "5cd35beef9a56df786680971|e368247c-5bb7-b7cc-276f-fc19b5974317",
                 },
                 value: 0,
                 unit: "",
@@ -33110,8 +33098,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56df786680971|e368247c-5bb7-b7cc-276f-fc19b5974317",
+                  id: "5cd35beef9a56df786680971|e368247c-5bb7-b7cc-276f-fc19b5974317",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -33127,8 +33114,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56df786680971|e368247c-5bb7-b7cc-276f-fc19b5974317",
+                  id: "5cd35beef9a56df786680971|e368247c-5bb7-b7cc-276f-fc19b5974317",
                 },
                 value: 1,
                 unit: "",
@@ -33146,8 +33132,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56df786680971|609d037e-efc7-6d36-b790-0345c1f98264",
+                  id: "5cd35beef9a56df786680971|609d037e-efc7-6d36-b790-0345c1f98264",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -33163,8 +33148,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56df786680971|609d037e-efc7-6d36-b790-0345c1f98264",
+                  id: "5cd35beef9a56df786680971|609d037e-efc7-6d36-b790-0345c1f98264",
                 },
                 value: 1,
                 unit: "",
@@ -33182,8 +33166,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56df786680971|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
+                  id: "5cd35beef9a56df786680971|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -33199,8 +33182,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56df786680971|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
+                  id: "5cd35beef9a56df786680971|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
                 },
                 value: 1,
                 unit: "",
@@ -33218,8 +33200,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56df786680971|d0b42926-76da-085e-480e-22e28acaf20c",
+                  id: "5cd35beef9a56df786680971|d0b42926-76da-085e-480e-22e28acaf20c",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -33235,8 +33216,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56df786680971|d0b42926-76da-085e-480e-22e28acaf20c",
+                  id: "5cd35beef9a56df786680971|d0b42926-76da-085e-480e-22e28acaf20c",
                 },
                 value: 1,
                 unit: "",
@@ -33262,8 +33242,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d0c5768097b|609d037e-efc7-6d36-b790-0345c1f98264",
+                  id: "5cd35beef9a56d0c5768097b|609d037e-efc7-6d36-b790-0345c1f98264",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -33279,8 +33258,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d0c5768097b|a4211620-f811-3254-20ba-abe7be8fa5f3",
+                  id: "5cd35beef9a56d0c5768097b|a4211620-f811-3254-20ba-abe7be8fa5f3",
                 },
                 value: 0,
                 unit: "",
@@ -33294,8 +33272,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d0c5768097b|a4211620-f811-3254-20ba-abe7be8fa5f3",
+                  id: "5cd35beef9a56d0c5768097b|a4211620-f811-3254-20ba-abe7be8fa5f3",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -33311,8 +33288,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d0c5768097b|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
+                  id: "5cd35beef9a56d0c5768097b|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
                 },
                 value: 0,
                 unit: "",
@@ -33326,8 +33302,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d0c5768097b|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
+                  id: "5cd35beef9a56d0c5768097b|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -33343,8 +33318,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d0c5768097b|609d037e-efc7-6d36-b790-0345c1f98264",
+                  id: "5cd35beef9a56d0c5768097b|609d037e-efc7-6d36-b790-0345c1f98264",
                 },
                 value: 0,
                 unit: "",
@@ -33362,8 +33336,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d0c5768097b|609d037e-efc7-6d36-b790-0345c1f98264",
+                  id: "5cd35beef9a56d0c5768097b|609d037e-efc7-6d36-b790-0345c1f98264",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -33379,8 +33352,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d0c5768097b|609d037e-efc7-6d36-b790-0345c1f98264",
+                  id: "5cd35beef9a56d0c5768097b|609d037e-efc7-6d36-b790-0345c1f98264",
                 },
                 value: 1,
                 unit: "",
@@ -33398,8 +33370,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d0c5768097b|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
+                  id: "5cd35beef9a56d0c5768097b|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -33415,8 +33386,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d0c5768097b|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
+                  id: "5cd35beef9a56d0c5768097b|59917b3c-38b1-0a8f-1cc2-632130bfa02a",
                 },
                 value: 1,
                 unit: "",
@@ -33434,8 +33404,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d0c5768097b|a4211620-f811-3254-20ba-abe7be8fa5f3",
+                  id: "5cd35beef9a56d0c5768097b|a4211620-f811-3254-20ba-abe7be8fa5f3",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -33451,8 +33420,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d0c5768097b|a4211620-f811-3254-20ba-abe7be8fa5f3",
+                  id: "5cd35beef9a56d0c5768097b|a4211620-f811-3254-20ba-abe7be8fa5f3",
                 },
                 value: 1,
                 unit: "",
@@ -33478,8 +33446,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ab068097c|98ff7284-5aa0-9c5e-d1b7-c2c367dab5e6",
+                  id: "5cd35beef9a56d7ab068097c|98ff7284-5aa0-9c5e-d1b7-c2c367dab5e6",
                 },
                 value: 0,
                 unit: "",
@@ -33493,8 +33460,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ab068097c|a4d65752-e696-4ba2-3ad4-ba6a386c66ec",
+                  id: "5cd35beef9a56d7ab068097c|a4d65752-e696-4ba2-3ad4-ba6a386c66ec",
                 },
                 value: 0,
                 unit: "",
@@ -33508,8 +33474,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ab068097c|a4d65752-e696-4ba2-3ad4-ba6a386c66ec",
+                  id: "5cd35beef9a56d7ab068097c|a4d65752-e696-4ba2-3ad4-ba6a386c66ec",
                 },
                 xValue: 40,
                 xUnit: "PX",
@@ -33525,8 +33490,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ab068097c|98ff7284-5aa0-9c5e-d1b7-c2c367dab5e6",
+                  id: "5cd35beef9a56d7ab068097c|98ff7284-5aa0-9c5e-d1b7-c2c367dab5e6",
                 },
                 xValue: -40,
                 xUnit: "PX",
@@ -33546,8 +33510,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ab068097c|98ff7284-5aa0-9c5e-d1b7-c2c367dab5e6",
+                  id: "5cd35beef9a56d7ab068097c|98ff7284-5aa0-9c5e-d1b7-c2c367dab5e6",
                 },
                 xValue: 0,
                 xUnit: "PX",
@@ -33563,8 +33526,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ab068097c|a4d65752-e696-4ba2-3ad4-ba6a386c66ec",
+                  id: "5cd35beef9a56d7ab068097c|a4d65752-e696-4ba2-3ad4-ba6a386c66ec",
                 },
                 value: 1,
                 unit: "",
@@ -33578,8 +33540,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ab068097c|a4d65752-e696-4ba2-3ad4-ba6a386c66ec",
+                  id: "5cd35beef9a56d7ab068097c|a4d65752-e696-4ba2-3ad4-ba6a386c66ec",
                 },
                 xValue: 0,
                 xUnit: "PX",
@@ -33595,8 +33556,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ab068097c|98ff7284-5aa0-9c5e-d1b7-c2c367dab5e6",
+                  id: "5cd35beef9a56d7ab068097c|98ff7284-5aa0-9c5e-d1b7-c2c367dab5e6",
                 },
                 value: 1,
                 unit: "",
@@ -33622,8 +33582,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|84db44d7-8fee-8c46-0b33-8383f9e2e918",
+                  id: "5cd35beef9a56d55e868097d|84db44d7-8fee-8c46-0b33-8383f9e2e918",
                 },
                 xValue: 30,
                 xUnit: "PX",
@@ -33639,8 +33598,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|3ad76b0a-4480-952c-133d-2a1452e49641",
+                  id: "5cd35beef9a56d55e868097d|3ad76b0a-4480-952c-133d-2a1452e49641",
                 },
                 value: 0,
                 unit: "",
@@ -33654,8 +33612,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|3ad76b0a-4480-952c-133d-2a1452e49641",
+                  id: "5cd35beef9a56d55e868097d|3ad76b0a-4480-952c-133d-2a1452e49641",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -33671,8 +33628,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|505da9b3-ef90-4073-590e-34632934ec8d",
+                  id: "5cd35beef9a56d55e868097d|505da9b3-ef90-4073-590e-34632934ec8d",
                 },
                 value: 1,
                 unit: "",
@@ -33686,8 +33642,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|505da9b3-ef90-4073-590e-34632934ec8d",
+                  id: "5cd35beef9a56d55e868097d|505da9b3-ef90-4073-590e-34632934ec8d",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -33703,8 +33658,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|084bec40-9ba5-f445-55af-d0c76becce8a",
+                  id: "5cd35beef9a56d55e868097d|084bec40-9ba5-f445-55af-d0c76becce8a",
                 },
                 value: 0,
                 unit: "",
@@ -33718,8 +33672,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|084bec40-9ba5-f445-55af-d0c76becce8a",
+                  id: "5cd35beef9a56d55e868097d|084bec40-9ba5-f445-55af-d0c76becce8a",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -33735,8 +33688,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|afce977a-98b6-ee78-0fe5-e8c5fca07afb",
+                  id: "5cd35beef9a56d55e868097d|afce977a-98b6-ee78-0fe5-e8c5fca07afb",
                 },
                 value: 0,
                 unit: "",
@@ -33750,8 +33702,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|afce977a-98b6-ee78-0fe5-e8c5fca07afb",
+                  id: "5cd35beef9a56d55e868097d|afce977a-98b6-ee78-0fe5-e8c5fca07afb",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -33767,8 +33718,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|84db44d7-8fee-8c46-0b33-8383f9e2e918",
+                  id: "5cd35beef9a56d55e868097d|84db44d7-8fee-8c46-0b33-8383f9e2e918",
                 },
                 value: 0,
                 unit: "",
@@ -33786,8 +33736,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|84db44d7-8fee-8c46-0b33-8383f9e2e918",
+                  id: "5cd35beef9a56d55e868097d|84db44d7-8fee-8c46-0b33-8383f9e2e918",
                 },
                 value: 1,
                 unit: "",
@@ -33801,8 +33750,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|afce977a-98b6-ee78-0fe5-e8c5fca07afb",
+                  id: "5cd35beef9a56d55e868097d|afce977a-98b6-ee78-0fe5-e8c5fca07afb",
                 },
                 value: 1,
                 unit: "",
@@ -33816,8 +33764,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|afce977a-98b6-ee78-0fe5-e8c5fca07afb",
+                  id: "5cd35beef9a56d55e868097d|afce977a-98b6-ee78-0fe5-e8c5fca07afb",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -33833,8 +33780,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|84db44d7-8fee-8c46-0b33-8383f9e2e918",
+                  id: "5cd35beef9a56d55e868097d|84db44d7-8fee-8c46-0b33-8383f9e2e918",
                 },
                 xValue: 0,
                 xUnit: "PX",
@@ -33854,8 +33800,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|084bec40-9ba5-f445-55af-d0c76becce8a",
+                  id: "5cd35beef9a56d55e868097d|084bec40-9ba5-f445-55af-d0c76becce8a",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -33871,8 +33816,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|084bec40-9ba5-f445-55af-d0c76becce8a",
+                  id: "5cd35beef9a56d55e868097d|084bec40-9ba5-f445-55af-d0c76becce8a",
                 },
                 value: 1,
                 unit: "",
@@ -33890,8 +33834,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|505da9b3-ef90-4073-590e-34632934ec8d",
+                  id: "5cd35beef9a56d55e868097d|505da9b3-ef90-4073-590e-34632934ec8d",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -33907,8 +33850,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|505da9b3-ef90-4073-590e-34632934ec8d",
+                  id: "5cd35beef9a56d55e868097d|505da9b3-ef90-4073-590e-34632934ec8d",
                 },
                 value: 1,
                 unit: "",
@@ -33926,8 +33868,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|3ad76b0a-4480-952c-133d-2a1452e49641",
+                  id: "5cd35beef9a56d55e868097d|3ad76b0a-4480-952c-133d-2a1452e49641",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -33943,8 +33884,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d55e868097d|3ad76b0a-4480-952c-133d-2a1452e49641",
+                  id: "5cd35beef9a56d55e868097d|3ad76b0a-4480-952c-133d-2a1452e49641",
                 },
                 value: 1,
                 unit: "",
@@ -33970,8 +33910,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56dff37680980|c39bff85-ea64-81f2-8580-189b9312e2f0",
+                  id: "5cd35beef9a56dff37680980|c39bff85-ea64-81f2-8580-189b9312e2f0",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -33987,8 +33926,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56dff37680980|2fda627f-273d-08a4-e6d3-c6b8fb09e833",
+                  id: "5cd35beef9a56dff37680980|2fda627f-273d-08a4-e6d3-c6b8fb09e833",
                 },
                 value: 0,
                 unit: "",
@@ -34002,8 +33940,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56dff37680980|2fda627f-273d-08a4-e6d3-c6b8fb09e833",
+                  id: "5cd35beef9a56dff37680980|2fda627f-273d-08a4-e6d3-c6b8fb09e833",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -34019,8 +33956,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56dff37680980|437bda4e-96bc-0f18-9173-66eb16c9de32",
+                  id: "5cd35beef9a56dff37680980|437bda4e-96bc-0f18-9173-66eb16c9de32",
                 },
                 value: 0,
                 unit: "",
@@ -34034,8 +33970,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56dff37680980|437bda4e-96bc-0f18-9173-66eb16c9de32",
+                  id: "5cd35beef9a56dff37680980|437bda4e-96bc-0f18-9173-66eb16c9de32",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -34051,8 +33986,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56dff37680980|c39bff85-ea64-81f2-8580-189b9312e2f0",
+                  id: "5cd35beef9a56dff37680980|c39bff85-ea64-81f2-8580-189b9312e2f0",
                 },
                 value: 0,
                 unit: "",
@@ -34070,8 +34004,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56dff37680980|c39bff85-ea64-81f2-8580-189b9312e2f0",
+                  id: "5cd35beef9a56dff37680980|c39bff85-ea64-81f2-8580-189b9312e2f0",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -34087,8 +34020,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56dff37680980|c39bff85-ea64-81f2-8580-189b9312e2f0",
+                  id: "5cd35beef9a56dff37680980|c39bff85-ea64-81f2-8580-189b9312e2f0",
                 },
                 value: 1,
                 unit: "",
@@ -34106,8 +34038,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56dff37680980|437bda4e-96bc-0f18-9173-66eb16c9de32",
+                  id: "5cd35beef9a56dff37680980|437bda4e-96bc-0f18-9173-66eb16c9de32",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -34123,8 +34054,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56dff37680980|437bda4e-96bc-0f18-9173-66eb16c9de32",
+                  id: "5cd35beef9a56dff37680980|437bda4e-96bc-0f18-9173-66eb16c9de32",
                 },
                 value: 1,
                 unit: "",
@@ -34142,8 +34072,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56dff37680980|2fda627f-273d-08a4-e6d3-c6b8fb09e833",
+                  id: "5cd35beef9a56dff37680980|2fda627f-273d-08a4-e6d3-c6b8fb09e833",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -34159,8 +34088,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56dff37680980|2fda627f-273d-08a4-e6d3-c6b8fb09e833",
+                  id: "5cd35beef9a56dff37680980|2fda627f-273d-08a4-e6d3-c6b8fb09e833",
                 },
                 value: 1,
                 unit: "",
@@ -35151,8 +35079,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d136068096b|c0f26aa0-abd0-593f-bf4e-89ca12c746d1",
+                  id: "5cd35beef9a56d136068096b|c0f26aa0-abd0-593f-bf4e-89ca12c746d1",
                 },
                 value: 0,
                 unit: "",
@@ -35166,8 +35093,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d136068096b|977b9f01-ad50-b527-e5e4-bb7be7688a94",
+                  id: "5cd35beef9a56d136068096b|977b9f01-ad50-b527-e5e4-bb7be7688a94",
                 },
                 value: 0,
                 unit: "",
@@ -35181,8 +35107,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d136068096b|977b9f01-ad50-b527-e5e4-bb7be7688a94",
+                  id: "5cd35beef9a56d136068096b|977b9f01-ad50-b527-e5e4-bb7be7688a94",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -35198,8 +35123,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d136068096b|c0f26aa0-abd0-593f-bf4e-89ca12c746d1",
+                  id: "5cd35beef9a56d136068096b|c0f26aa0-abd0-593f-bf4e-89ca12c746d1",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -35215,8 +35139,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d136068096b|2dd5d8d1-131f-9a1e-6046-ea97850d7ca5",
+                  id: "5cd35beef9a56d136068096b|2dd5d8d1-131f-9a1e-6046-ea97850d7ca5",
                 },
                 value: 0,
                 unit: "",
@@ -35230,8 +35153,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d136068096b|2dd5d8d1-131f-9a1e-6046-ea97850d7ca5",
+                  id: "5cd35beef9a56d136068096b|2dd5d8d1-131f-9a1e-6046-ea97850d7ca5",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -35247,8 +35169,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d136068096b|a943808d-daf7-20cd-fe99-a29f11d91b17",
+                  id: "5cd35beef9a56d136068096b|a943808d-daf7-20cd-fe99-a29f11d91b17",
                 },
                 value: 0,
                 unit: "",
@@ -35262,8 +35183,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d136068096b|2dd5d8d1-131f-9a1e-6046-ea97850d7ca5",
+                  id: "5cd35beef9a56d136068096b|2dd5d8d1-131f-9a1e-6046-ea97850d7ca5",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -35283,8 +35203,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d136068096b|c0f26aa0-abd0-593f-bf4e-89ca12c746d1",
+                  id: "5cd35beef9a56d136068096b|c0f26aa0-abd0-593f-bf4e-89ca12c746d1",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -35300,8 +35219,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d136068096b|c0f26aa0-abd0-593f-bf4e-89ca12c746d1",
+                  id: "5cd35beef9a56d136068096b|c0f26aa0-abd0-593f-bf4e-89ca12c746d1",
                 },
                 value: 1,
                 unit: "",
@@ -35319,8 +35237,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d136068096b|2dd5d8d1-131f-9a1e-6046-ea97850d7ca5",
+                  id: "5cd35beef9a56d136068096b|2dd5d8d1-131f-9a1e-6046-ea97850d7ca5",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -35336,8 +35253,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d136068096b|2dd5d8d1-131f-9a1e-6046-ea97850d7ca5",
+                  id: "5cd35beef9a56d136068096b|2dd5d8d1-131f-9a1e-6046-ea97850d7ca5",
                 },
                 value: 1,
                 unit: "",
@@ -35355,8 +35271,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d136068096b|a943808d-daf7-20cd-fe99-a29f11d91b17",
+                  id: "5cd35beef9a56d136068096b|a943808d-daf7-20cd-fe99-a29f11d91b17",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -35372,8 +35287,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d136068096b|a943808d-daf7-20cd-fe99-a29f11d91b17",
+                  id: "5cd35beef9a56d136068096b|a943808d-daf7-20cd-fe99-a29f11d91b17",
                 },
                 value: 1,
                 unit: "",
@@ -35391,8 +35305,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d136068096b|977b9f01-ad50-b527-e5e4-bb7be7688a94",
+                  id: "5cd35beef9a56d136068096b|977b9f01-ad50-b527-e5e4-bb7be7688a94",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -35408,8 +35321,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d136068096b|977b9f01-ad50-b527-e5e4-bb7be7688a94",
+                  id: "5cd35beef9a56d136068096b|977b9f01-ad50-b527-e5e4-bb7be7688a94",
                 },
                 value: 1,
                 unit: "",
@@ -35435,8 +35347,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ce2680972|3c710a81-1f2e-aa5e-2f57-ff69320765f1",
+                  id: "5cd35beef9a56d7ce2680972|3c710a81-1f2e-aa5e-2f57-ff69320765f1",
                 },
                 value: 0,
                 unit: "",
@@ -35450,8 +35361,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ce2680972|b9983c42-563b-1c58-792e-c64165f74b5a",
+                  id: "5cd35beef9a56d7ce2680972|b9983c42-563b-1c58-792e-c64165f74b5a",
                 },
                 value: 0,
                 unit: "",
@@ -35465,8 +35375,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ce2680972|3c710a81-1f2e-aa5e-2f57-ff69320765f1",
+                  id: "5cd35beef9a56d7ce2680972|3c710a81-1f2e-aa5e-2f57-ff69320765f1",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -35482,8 +35391,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ce2680972|d6b39f17-d3ef-2106-07be-23594067dd31",
+                  id: "5cd35beef9a56d7ce2680972|d6b39f17-d3ef-2106-07be-23594067dd31",
                 },
                 value: 0,
                 unit: "",
@@ -35497,8 +35405,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ce2680972|b9983c42-563b-1c58-792e-c64165f74b5a",
+                  id: "5cd35beef9a56d7ce2680972|b9983c42-563b-1c58-792e-c64165f74b5a",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -35514,8 +35421,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ce2680972|d6b39f17-d3ef-2106-07be-23594067dd31",
+                  id: "5cd35beef9a56d7ce2680972|d6b39f17-d3ef-2106-07be-23594067dd31",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -35535,8 +35441,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ce2680972|3c710a81-1f2e-aa5e-2f57-ff69320765f1",
+                  id: "5cd35beef9a56d7ce2680972|3c710a81-1f2e-aa5e-2f57-ff69320765f1",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -35552,8 +35457,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ce2680972|3c710a81-1f2e-aa5e-2f57-ff69320765f1",
+                  id: "5cd35beef9a56d7ce2680972|3c710a81-1f2e-aa5e-2f57-ff69320765f1",
                 },
                 value: 1,
                 unit: "",
@@ -35571,8 +35475,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ce2680972|b9983c42-563b-1c58-792e-c64165f74b5a",
+                  id: "5cd35beef9a56d7ce2680972|b9983c42-563b-1c58-792e-c64165f74b5a",
                 },
                 value: 1,
                 unit: "",
@@ -35586,8 +35489,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ce2680972|b9983c42-563b-1c58-792e-c64165f74b5a",
+                  id: "5cd35beef9a56d7ce2680972|b9983c42-563b-1c58-792e-c64165f74b5a",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -35607,8 +35509,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ce2680972|d6b39f17-d3ef-2106-07be-23594067dd31",
+                  id: "5cd35beef9a56d7ce2680972|d6b39f17-d3ef-2106-07be-23594067dd31",
                 },
                 value: 1,
                 unit: "",
@@ -35622,8 +35523,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d7ce2680972|d6b39f17-d3ef-2106-07be-23594067dd31",
+                  id: "5cd35beef9a56d7ce2680972|d6b39f17-d3ef-2106-07be-23594067dd31",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -35651,8 +35551,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d6d7668098a|3c710a81-1f2e-aa5e-2f57-ff69320765f1",
+                  id: "5cd35beef9a56d6d7668098a|3c710a81-1f2e-aa5e-2f57-ff69320765f1",
                 },
                 value: 0,
                 unit: "",
@@ -35666,8 +35565,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d6d7668098a|b9983c42-563b-1c58-792e-c64165f74b5a",
+                  id: "5cd35beef9a56d6d7668098a|b9983c42-563b-1c58-792e-c64165f74b5a",
                 },
                 value: 0,
                 unit: "",
@@ -35681,8 +35579,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d6d7668098a|3c710a81-1f2e-aa5e-2f57-ff69320765f1",
+                  id: "5cd35beef9a56d6d7668098a|3c710a81-1f2e-aa5e-2f57-ff69320765f1",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -35698,8 +35595,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d6d7668098a|d6b39f17-d3ef-2106-07be-23594067dd31",
+                  id: "5cd35beef9a56d6d7668098a|d6b39f17-d3ef-2106-07be-23594067dd31",
                 },
                 value: 0,
                 unit: "",
@@ -35713,8 +35609,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d6d7668098a|b9983c42-563b-1c58-792e-c64165f74b5a",
+                  id: "5cd35beef9a56d6d7668098a|b9983c42-563b-1c58-792e-c64165f74b5a",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -35730,8 +35625,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d6d7668098a|d6b39f17-d3ef-2106-07be-23594067dd31",
+                  id: "5cd35beef9a56d6d7668098a|d6b39f17-d3ef-2106-07be-23594067dd31",
                 },
                 yValue: 20,
                 xUnit: "PX",
@@ -35751,8 +35645,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d6d7668098a|3c710a81-1f2e-aa5e-2f57-ff69320765f1",
+                  id: "5cd35beef9a56d6d7668098a|3c710a81-1f2e-aa5e-2f57-ff69320765f1",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -35768,8 +35661,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d6d7668098a|3c710a81-1f2e-aa5e-2f57-ff69320765f1",
+                  id: "5cd35beef9a56d6d7668098a|3c710a81-1f2e-aa5e-2f57-ff69320765f1",
                 },
                 value: 1,
                 unit: "",
@@ -35787,8 +35679,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d6d7668098a|b9983c42-563b-1c58-792e-c64165f74b5a",
+                  id: "5cd35beef9a56d6d7668098a|b9983c42-563b-1c58-792e-c64165f74b5a",
                 },
                 value: 1,
                 unit: "",
@@ -35802,8 +35693,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d6d7668098a|b9983c42-563b-1c58-792e-c64165f74b5a",
+                  id: "5cd35beef9a56d6d7668098a|b9983c42-563b-1c58-792e-c64165f74b5a",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -35823,8 +35713,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d6d7668098a|d6b39f17-d3ef-2106-07be-23594067dd31",
+                  id: "5cd35beef9a56d6d7668098a|d6b39f17-d3ef-2106-07be-23594067dd31",
                 },
                 value: 1,
                 unit: "",
@@ -35838,8 +35727,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d6d7668098a|d6b39f17-d3ef-2106-07be-23594067dd31",
+                  id: "5cd35beef9a56d6d7668098a|d6b39f17-d3ef-2106-07be-23594067dd31",
                 },
                 yValue: 0,
                 xUnit: "PX",
@@ -35867,8 +35755,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d091a68096e|7ec4599c-a3cf-b08d-1697-947817ba7513",
+                  id: "5cd35beef9a56d091a68096e|7ec4599c-a3cf-b08d-1697-947817ba7513",
                 },
                 value: 0,
                 unit: "",
@@ -35882,8 +35769,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d091a68096e|e267b723-0e76-4ef1-fea3-d5d9c5fca2b3",
+                  id: "5cd35beef9a56d091a68096e|e267b723-0e76-4ef1-fea3-d5d9c5fca2b3",
                 },
                 value: 0,
                 unit: "",
@@ -35897,8 +35783,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d091a68096e|e267b723-0e76-4ef1-fea3-d5d9c5fca2b3",
+                  id: "5cd35beef9a56d091a68096e|e267b723-0e76-4ef1-fea3-d5d9c5fca2b3",
                 },
                 xValue: 20,
                 xUnit: "PX",
@@ -35914,8 +35799,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d091a68096e|49f087a5-b075-1324-cdbb-516ad51aab92",
+                  id: "5cd35beef9a56d091a68096e|49f087a5-b075-1324-cdbb-516ad51aab92",
                 },
                 value: 0,
                 unit: "",
@@ -35929,8 +35813,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d091a68096e|49f087a5-b075-1324-cdbb-516ad51aab92",
+                  id: "5cd35beef9a56d091a68096e|49f087a5-b075-1324-cdbb-516ad51aab92",
                 },
                 xValue: 20,
                 xUnit: "PX",
@@ -35946,8 +35829,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  id:
-                    "5cd35beef9a56d091a68096e|7ec4599c-a3cf-b08d-1697-947817ba7513",
+                  id: "5cd35beef9a56d091a68096e|7ec4599c-a3cf-b08d-1697-947817ba7513",
                 },
                 xValue: 40,
                 xUnit: "PX",
@@ -35967,8 +35849,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d091a68096e|7ec4599c-a3cf-b08d-1697-947817ba7513",
+                  id: "5cd35beef9a56d091a68096e|7ec4599c-a3cf-b08d-1697-947817ba7513",
                 },
                 xValue: 0,
                 xUnit: "PX",
@@ -35984,8 +35865,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d091a68096e|7ec4599c-a3cf-b08d-1697-947817ba7513",
+                  id: "5cd35beef9a56d091a68096e|7ec4599c-a3cf-b08d-1697-947817ba7513",
                 },
                 value: 1,
                 unit: "",
@@ -36003,8 +35883,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d091a68096e|49f087a5-b075-1324-cdbb-516ad51aab92",
+                  id: "5cd35beef9a56d091a68096e|49f087a5-b075-1324-cdbb-516ad51aab92",
                 },
                 xValue: 0,
                 xUnit: "PX",
@@ -36020,8 +35899,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d091a68096e|49f087a5-b075-1324-cdbb-516ad51aab92",
+                  id: "5cd35beef9a56d091a68096e|49f087a5-b075-1324-cdbb-516ad51aab92",
                 },
                 value: 1,
                 unit: "",
@@ -36039,8 +35917,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d091a68096e|e267b723-0e76-4ef1-fea3-d5d9c5fca2b3",
+                  id: "5cd35beef9a56d091a68096e|e267b723-0e76-4ef1-fea3-d5d9c5fca2b3",
                 },
                 xValue: 0,
                 xUnit: "PX",
@@ -36056,8 +35933,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 300,
                 target: {
-                  id:
-                    "5cd35beef9a56d091a68096e|e267b723-0e76-4ef1-fea3-d5d9c5fca2b3",
+                  id: "5cd35beef9a56d091a68096e|e267b723-0e76-4ef1-fea3-d5d9c5fca2b3",
                 },
                 value: 1,
                 unit: "",
