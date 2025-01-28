@@ -193,52 +193,17 @@
           </div>
         </div>
         <div class="contact-form line w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" action="https://api.web3forms.com/submit"
+          <form id="email-form" name="email-form" data-name="Email Form" action="https://quicksquad.onrender.com/send-email"
             method="POST" aria-label="Email Form">
-            <input type="hidden" name="access_key" value="597a24aa-9233-4800-8c62-7c282a4bd2ee" />
-            <input class="field w-input" maxlength="256" name="Name" data-name="Name" placeholder="Enter your name"
+            <input class="field w-input" maxlength="256" name="name" data-name="Name" placeholder="Enter your name"
               type="text" id="Name-7" required />
-            <input class="field w-input" maxlength="256" name="Email" data-name="Email Address"
+            <input class="field w-input" maxlength="256" name="email" data-name="Email Address"
               placeholder="Enter your email address" type="text" id="Email-Address" required />
-            <input class="field w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Enter your phone"
-              type="text" required id="name-3" />
-            <input class="field area w-input" maxlength="256" name="Messagge" data-name="Messagge"
-              placeholder="Enter message" type="text" id="Messagge" required />
+            <input class="field area w-input" maxlength="256" name="message" data-name="message"
+              placeholder="Enter message" type="text" id="message" required />
             <input type="submit" data-wait="Please wait..." class="button submit-button w-button"
               value="Send Message" />
           </form>
-
-          <script>
-            document
-              .getElementById("email-form")
-              .addEventListener("submit", function (event) {
-                event.preventDefault(); // Prevent default behavior to handle it manually
-
-                // Collect form data
-                const formData = new FormData(this);
-
-                // Send the data using Fetch API
-                fetch(this.action, {
-                  method: this.method,
-                  body: formData,
-                })
-                  .then((response) => {
-                    if (response.ok) {
-                      alert(
-                        "Thank you! Your message has been sent successfully."
-                      );
-                      location.reload(); // Reload the page
-                    } else {
-                      alert("Oops! Something went wrong. Please try again.");
-                    }
-                  })
-                  .catch(() => {
-                    alert(
-                      "Oops! Something went wrong. Please check your internet connection and try again."
-                    );
-                  });
-              });
-          </script>
 
           <div class="success-message w-form-done" tabindex="-1" role="region" aria-label="Email Form success">
             <div>Thank you! Your submission has been received!</div>
@@ -250,42 +215,6 @@
       </div>
     </div>
   </div>
-  <!-- <main>
-      <section class="contact-form1">
-        <h2>Send Us a Message</h2>
-        <form id="form" method="POST" action="/send-email" name="form">
-          <label for="name">Full Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
-            required
-          />
-
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your Email"
-            required
-          />
-
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="How can we help?"
-            required
-          ></textarea>
-
-          <button type="submit" value="submit">Send Message</button>
-          <div id="result"></div>
-        </form>
-      </section>
-    </main> -->
   <div class="footer">
     <div class="container full">
       <div class="footer-row w-row">
@@ -432,24 +361,25 @@
       event.preventDefault(); // Prevent form submission to stop default behavior
       const form = event.target;
       const formData = new FormData(form);
+  
       const data = {
         name: formData.get("name"),
         email: formData.get("email"),
         message: formData.get("message"),
       };
-
+  
       try {
-        const response = await fetch("/send-email", {
+        const response = await fetch("https://quicksquad.onrender.com/send-email", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(data),
         });
-
+  
         const result = await response.json();
         const resultDiv = document.getElementById("result");
-
+  
         if (response.ok) {
           resultDiv.innerHTML = `<p style="color: green;">${result.success}</p>`;
           setTimeout(() => {
@@ -460,12 +390,10 @@
         }
       } catch (error) {
         console.error("Error:", error);
-        document.getElementById(
-          "result"
-        ).innerHTML = `<p style="color: red;">Failed to send message.</p>`;
+        document.getElementById("result").innerHTML = `<p style="color: red;">Failed to send message.</p>`;
       }
     }
-  </script>
+  </script>  
 </body>
 
 </html>
