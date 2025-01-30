@@ -67,7 +67,7 @@
 }
 
 .subscription-card .content button:hover {
-  background-color: #0056b3;
+  background-color: #007bff;
 }
 body {
   margin: 0;
@@ -2904,7 +2904,7 @@ blockquote {
 }
 
 .button:hover {
-  background-color: #003bb6;
+  background-color: #007bff;
 }
 
 .button.feature {
