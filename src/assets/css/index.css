@@ -882,7 +882,22 @@ textarea.w-input, textarea.w-select {
   display: none !important;
 }
 
+@media screen and (max-width: 1170px) {
+
+  .navigation-link {
+    font-size: 15px !important;
+  }
+
+  .w-nav-brand {
+    width: 150px !important;
+  }
+}
+
 @media screen and (max-width: 991px) {
+
+  .navigation-link {
+    font-size: 15px;
+  }
   .w-container {
     max-width: 728px;
   }
@@ -1518,6 +1533,7 @@ textarea.w-input, textarea.w-select {
 @media screen and (max-width: 767px) {
   .w-nav-brand {
     padding-left: 10px;
+    width: 150px;
   }
 }
 
@@ -1941,6 +1957,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .w-nav-brand {
+  width: 250px;
   float: left;
   color: #333;
   text-decoration: none;
@@ -1966,6 +1983,7 @@ textarea.w-input, textarea.w-select {
 .w-nav-menu {
   float: right;
   position: relative;
+  padding-top: 10px;
 }
 
 [data-nav-menu-open] {
@@ -2451,15 +2469,15 @@ blockquote {
 }
 
 .hero-image {
-  max-width: 950px;
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
   float: left;
   clear: none;
   display: block;
   position: relative;
-  top: -100px;
-  bottom: -131px;
-  left: -42px;
-  right: -58px;
 }
 
 .hero-image.iphones {
@@ -2737,7 +2755,7 @@ blockquote {
 .container.full.hero {
   text-align: left;
   position: relative;
-  top: 22%;
+  top: 10%;
 }
 
 .container.full.hero.video {
@@ -3789,7 +3807,7 @@ blockquote {
   letter-spacing: 1px;
   padding: 14px 20px;
   font-family: Poppins, sans-serif;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 500;
   display: inline-block;
 }
