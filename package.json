@@ -1,7 +1,7 @@
 {
   "name": "QuickSquad",
   "version": "1.0.0",
-  "description": "",
+  "description": "QuickSquad",
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
