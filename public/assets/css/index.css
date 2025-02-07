@@ -2698,7 +2698,7 @@ blockquote {
 .icon.line {
   width: 100px;
   height: 100px;
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/596e1bf9e38af95a0f33cf46_smartphone-outline.png");
+  background-image: url("/assets/Remote\ IT.png");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 45px;
@@ -2711,12 +2711,12 @@ blockquote {
 }
 
 .icon.line._2 {
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/596e1c0a4a7551389c1a7004_eye%20(1).png");
+  background-image: url("/assets/Network\ troubleshoot.png");
   background-size: 45px;
 }
 
 .icon.line._3 {
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/596e1c1415a2d67df1364a62_daily-newspaper.png");
+  background-image: url("/assets/System\ Optimization.png");
   background-size: 45px;
 }
 
@@ -5624,7 +5624,7 @@ blockquote {
 }
 
 .icon-first.third {
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/596e1c0a4a7551389c1a7004_eye%20(1).png");
+  background-image: url("/assets/Network\ troubleshoot.png");
 }
 
 .icon-first.third.image {
@@ -5640,7 +5640,7 @@ blockquote {
 }
 
 .icon-first.fourth {
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/596e1bf9e38af95a0f33cf46_smartphone-outline.png");
+  background-image: url("/assets/Remote\ IT.png");
 }
 
 .icon-first.fourth.image {
