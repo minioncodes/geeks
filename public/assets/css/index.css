@@ -2727,7 +2727,8 @@ blockquote {
 .link.footer-link {
   color: #fff;
   font-family: Poppins, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 15px;
   text-decoration: none;
   transition: color .4s;
 }
@@ -3183,7 +3184,7 @@ blockquote {
   width: 70%;
   float: none;
   text-align: center;
-  background-image: linear-gradient(rgba(24, 79, 194, .9), rgba(24, 79, 194, .9)), url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/58c70b2f0709dda74260a94e_04-2.jpg");
+  background-image: linear-gradient(rgba(24, 79, 194, .9), rgba(24, 79, 194, .9)), url("/assets/QuickSquad\ \(3\).png");
   background-position: 0 0, 0 0;
   background-size: auto, cover;
   border-radius: 20px;
@@ -4003,7 +4004,7 @@ blockquote {
 }
 
 .left-div._1 {
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/58c70b2f0709dda74260a94e_04-2.jpg");
+  background-image: url("/assets/QuickSquad\ \(3\).png");
   background-size: cover;
 }
 
@@ -4455,7 +4456,8 @@ blockquote {
 .footer-text {
   color: #fff;
   font-family: Poppins, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 17px;
 }
 
 .footer-text.white {
