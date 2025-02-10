@@ -1021,6 +1021,16 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 479px) {
+  .div-text {
+    height: auto;
+    text-align: left;
+    background-color: #ffffff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 60px 20px;
+  }
   .w-container {
     max-width: none;
   }
@@ -1518,6 +1528,16 @@ textarea.w-input, textarea.w-select {
     padding-left: 10px;
     width: 150px;
   }
+  .div-text {
+    height: auto;
+    text-align: left;
+    background-color: #ffffff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 60px 20px;
+  }
 }
 
 .w-lightbox-backdrop {
@@ -1749,6 +1769,16 @@ textarea.w-input, textarea.w-select {
 }
 
 @media (min-width: 768px) {
+  .div-text {
+    height: auto;
+    text-align: left;
+    background-color: #ffffff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 60px 20px;
+  }
   .w-lightbox-content {
     height: 96vh;
     margin-top: 2vh;
@@ -2075,6 +2105,16 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 479px) {
+  .div-text {
+    height: auto;
+    text-align: left;
+    background-color: #ffffff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 60px 20px;
+  }
   .w-nav[data-collapse="tiny"] .w-nav-menu {
     display: none;
   }
@@ -2138,6 +2178,16 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 479px) {
+  .div-text {
+    height: auto;
+    text-align: left;
+    background-color: #ffffff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 60px 20px;
+  }
   .w-tab-link {
     display: block;
   }
@@ -6572,6 +6622,16 @@ blockquote {
 }
 
 @media screen and (max-width: 767px) {
+  .div-text {
+    height: auto;
+    text-align: left;
+    background-color: #ffffff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 60px 20px;
+  }
   .hero-tittle.word.white {
     font-size: 35px;
     line-height: 31px;
@@ -7222,6 +7282,16 @@ blockquote {
 }
 
 @media screen and (max-width: 479px) {
+  .div-text {
+    height: auto;
+    text-align: left;
+    background-color: #ffffff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 60px 20px;
+  }
   .hero-tittle.word {
     font-size: 20px;
     line-height: 21px;
