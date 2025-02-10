@@ -79,7 +79,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 .socialnet{
-  font-size: 20px;
+  font-size: 25px;
 }
 .socialnet i{
   padding: 10px;
@@ -2324,8 +2324,8 @@ p {
   text-transform: none;
   margin-bottom: 10px;
   font-family: Poppins, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 24px;
 }
 
@@ -2698,7 +2698,7 @@ blockquote {
 .icon.line {
   width: 100px;
   height: 100px;
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/596e1bf9e38af95a0f33cf46_smartphone-outline.png");
+  background-image: url("/assets/Remote\ IT.png");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 45px;
@@ -2711,12 +2711,12 @@ blockquote {
 }
 
 .icon.line._2 {
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/596e1c0a4a7551389c1a7004_eye%20(1).png");
+  background-image: url("/assets/Network\ troubleshoot.png");
   background-size: 45px;
 }
 
 .icon.line._3 {
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/596e1c1415a2d67df1364a62_daily-newspaper.png");
+  background-image: url("/assets/System\ Optimization.png");
   background-size: 45px;
 }
 
@@ -2727,7 +2727,8 @@ blockquote {
 .link.footer-link {
   color: #fff;
   font-family: Poppins, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 15px;
   text-decoration: none;
   transition: color .4s;
 }
@@ -3190,7 +3191,7 @@ blockquote {
   width: 70%;
   float: none;
   text-align: center;
-  background-image: linear-gradient(rgba(24, 79, 194, .9), rgba(24, 79, 194, .9)), url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/58c70b2f0709dda74260a94e_04-2.jpg");
+  background-image: linear-gradient(rgba(24, 79, 194, .9), rgba(24, 79, 194, .9)), url("/assets/QuickSquad\ \(3\).png");
   background-position: 0 0, 0 0;
   background-size: auto, cover;
   border-radius: 20px;
@@ -3844,7 +3845,7 @@ blockquote {
 }
 
 .navigation-link.dark {
-  color: rgba(0, 0, 0, .65);
+  color:#fff;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -4010,7 +4011,7 @@ blockquote {
 }
 
 .left-div._1 {
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/58c70b2f0709dda74260a94e_04-2.jpg");
+  background-image: url("/assets/QuickSquad\ \(3\).png");
   background-size: cover;
 }
 
@@ -4462,7 +4463,8 @@ blockquote {
 .footer-text {
   color: #fff;
   font-family: Poppins, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 17px;
 }
 
 .footer-text.white {
@@ -5631,7 +5633,7 @@ blockquote {
 }
 
 .icon-first.third {
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/596e1c0a4a7551389c1a7004_eye%20(1).png");
+  background-image: url("/assets/Network\ troubleshoot.png");
 }
 
 .icon-first.third.image {
@@ -5647,7 +5649,7 @@ blockquote {
 }
 
 .icon-first.fourth {
-  background-image: url("https://assets-global.website-files.com/5746a22e485f3a03442bea0f/596e1bf9e38af95a0f33cf46_smartphone-outline.png");
+  background-image: url("/assets/Remote\ IT.png");
 }
 
 .icon-first.fourth.image {
