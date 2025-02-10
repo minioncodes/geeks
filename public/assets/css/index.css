@@ -2877,6 +2877,13 @@ blockquote {
   overflow: hidden;
 }
 
+.divider-line {
+  width: 20%;
+  height: 1px;
+  background-color: #cfd3d5;
+  margin:5% 40% 0 40%;
+}
+
 .section-divider-line {
   width: 100px;
   height: 3px;
