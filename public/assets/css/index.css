@@ -5021,9 +5021,9 @@ blockquote {
   display: inline-block;
 }
 
-.symbol-center {
+/* .symbol-center {
   text-align: center;
-}
+} */
 
 .blue {
   color: #191717;
