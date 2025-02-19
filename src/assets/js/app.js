@@ -5,7 +5,9 @@
  *   var Webflow = Webflow || [];
  *   Webflow.push(readyFunction);
  */
-
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("formSubs").action = "https://quicksquad-mail-production.up.railway.app/send-email";
+});
 (() => {
   var c_ = Object.create;
   var fn = Object.defineProperty;
