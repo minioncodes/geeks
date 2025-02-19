@@ -11,6 +11,9 @@
       transform: scale(1.05);
   }
 }
+.blog-card{
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .13);
+}
 .navigation-menu {
   display: flex;
   align-items: center; /* Align items in the center vertically */
