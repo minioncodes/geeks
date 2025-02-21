@@ -1796,10 +1796,6 @@ textarea.w-input, textarea.w-select {
 }
 
 @media (min-width: 768px) {
-  .w-row {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .div-text {
     height: auto;
     text-align: left;
