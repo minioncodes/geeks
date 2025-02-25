@@ -70,18 +70,38 @@
             gap: 20px;
         }
         .category {
-            background: #f1f1f7;
-            padding: 20px;
-            border-radius: 8px;
-            width: 300px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: 0.3s;
-            position: relative;
-        }
-        .category:hover .description {
-            display: block;
-        }
+          align-items: center;
+    justify-content: space-between;
+          width: 300px;
+    position: relative;
+    background: #f1f1f7;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.select-btn {
+    display: none;
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 2s ease, max-height 2s ease;
+}
+
+.category:hover .select-btn {
+    display: block;
+}
+
+.select-btn:hover {
+    background: #333333;
+}
+
         .icon {
             font-size: 30px;
             margin-bottom: 10px;
@@ -90,7 +110,7 @@
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: opacity 0.5s ease, max-height 0.5s ease;
+    transition: opacity 1s ease, max-height 1s ease;
     text-align: left;
     font-size: 14px;
     color: #555;
@@ -117,7 +137,7 @@
         .view-all:hover{
           background-color: #00499c;
         }
-        .column-tittle{
+        .column-title{
           font-weight: 600;
           font-size: 20px;
         }
@@ -260,8 +280,10 @@
       </div>
       <div>
         <div class="intro-row" id="categoryList"></div>
-        <center>
-        <button class="view-all" onclick="showAllCategories()">View All</button></center>
+      <center>
+        <button id="viewAllBtn" class="view-all" onclick="showAllCategories()">View All</button>
+        <button id="showLessBtn" class="view-all" onclick="showLessCategories()" style="display: none;">Show Less</button>
+      </center>
     </div>
       <!-- <div class="intro-row w-row">
         <div class="column-2 w-col w-col-4">
@@ -710,8 +732,8 @@
     </div>
   </div>
   </div>
-  <script>
-    const allCategories = [
+<script>
+  const allCategories = [
     { 
         icon: "fa-solid fa-hand-holding-dollar", 
         title: "Financial Assistance", 
@@ -791,60 +813,43 @@
     }
 ];
 
-    
-    function initializeCategories() {
+function initializeCategories(limit = 5) {
     const categoryList = document.getElementById("categoryList");
     categoryList.innerHTML = "";
-    
-    allCategories.slice(0, 5).forEach(cat => {
+
+    allCategories.slice(0, limit).forEach(cat => {
         const categoryDiv = document.createElement("div");
         categoryDiv.classList.add("category");
 
-        let descriptionContent;
-        if (Array.isArray(cat.description)) {
-            descriptionContent = `<ul class="description">${cat.description.map(item => `<li>${item}</li>`).join("")}</ul>`;
-        } else {
-            descriptionContent = `<p class="description">${cat.description}</p>`;
-        }
+        let descriptionContent = `<ul class="description">${cat.description.map(item => `<li>${item}</li>`).join("")}</ul>`;
 
         categoryDiv.innerHTML = `
             <div class="icon"><i class="${cat.icon}"></i></div>
-            <h2 class="column-tittle">${cat.title}</h2>
+            <h2 class="column-title">${cat.title}</h2>
             <div class="div-line"></div>
             ${descriptionContent}
+            <button class="select-btn">Select</button>
         `;
+
         categoryList.appendChild(categoryDiv);
     });
+
+    document.getElementById("viewAllBtn").style.display = limit < allCategories.length ? "block" : "none";
+    document.getElementById("showLessBtn").style.display = limit === allCategories.length ? "block" : "none";
 }
 
 function showAllCategories() {
-    const categoryList = document.getElementById("categoryList");
-    categoryList.innerHTML = "";
-    
-    allCategories.forEach(cat => {
-        const categoryDiv = document.createElement("div");
-        categoryDiv.classList.add("category");
-
-        let descriptionContent;
-        if (Array.isArray(cat.description)) {
-            descriptionContent = `<ul class="description">${cat.description.map(item => `<li>${item}</li>`).join("")}</ul>`;
-        } else {
-            descriptionContent = `<p class="description">${cat.description}</p>`;
-        }
-
-        categoryDiv.innerHTML = `
-            <div class="icon"><i class="${cat.icon}"></i></div>
-            <h2 class="column-tittle">${cat.title}</h2>
-            <div class="div-line"></div>
-            ${descriptionContent}
-        `;
-        categoryList.appendChild(categoryDiv);
-    });
-
-    document.querySelector(".view-all").style.display = "none";
+    initializeCategories(allCategories.length);
 }
 
-document.addEventListener("DOMContentLoaded", initializeCategories);
+function showLessCategories() {
+    initializeCategories(5);
+}
+
+// Initialize with first 5 categories
+document.addEventListener("DOMContentLoaded", () => {
+    initializeCategories(5);
+});
 
 </script>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5746a22e485f3a03442bea0f"
