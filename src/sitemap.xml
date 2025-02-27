@@ -3,43 +3,38 @@
    <url>
       <loc>https://quicksquad.live/</loc>
       <lastmod>2025-01-23</lastmod>
-      <changefreq>daily</changefreq>
+      <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
       <loc>https://quicksquad.live/blog</loc>
       <lastmod>2025-01-23</lastmod>
-      <changefreq>weekly</changefreq>
+      <changefreq>daily</changefreq>
       <priority>0.9</priority>
    </url>
    <url>
       <loc>https://quicksquad.live/about</loc>
       <lastmod>2025-01-23</lastmod>
-      <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
       <loc>https://quicksquad.live/plans</loc>
       <lastmod>2025-01-23</lastmod>
-      <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
       <loc>https://quicksquad.live/contact</loc>
       <lastmod>2025-01-23</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
+      <priority>0.7</priority>
    </url>
    <url>
       <loc>https://quicksquad.live/services</loc>
       <lastmod>2025-01-23</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
+      <priority>0.7</priority>
    </url>
    <url>
       <loc>https://quicksquad.live/privacy-policy</loc>
       <lastmod>2025-01-23</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
+      <priority>0.6</priority>
    </url>
 </urlset>
