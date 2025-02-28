@@ -196,7 +196,9 @@
     </div>
 
     <input type="submit" id="submit-button" class="button submit-button w-button" value="Submit" disabled />
+    <button id="submit-button" class="button submit-button w-button" disabled>Submit</button>
       </form>
+
           <div class="success-message w-form-done" tabindex="-1" role="region" aria-label="Email Form success">
             <div>Thank you! Your submission has been received!</div>
           </div>
@@ -545,16 +547,29 @@
   </script>
 <script>
   function enableSubmit(token) {
-      if (token) {
-          document.getElementById("submit-button").removeAttribute("disabled"); // Enable submit button
-      }
-  }
+    console.log("reCAPTCHA Triggered! Token:", token);
+    const submitButton = document.getElementById("submit-button");
+    if (token) {
+        submitButton.removeAttribute("disabled"); 
+        console.log("Submit button enabled!");
+    } else {
+        console.warn("Token is missing, submit button remains disabled.");
+    }
+}
+
   
   function disableSubmit() {
       document.getElementById("submit-button").setAttribute("disabled", "true"); // Disable submit button if captcha expires
   }
   </script>
-  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        grecaptcha.ready(function() {
+            console.log("reCAPTCHA is ready!");
+        });
+    });
+    </script>
+    
   <!-- Load Google reCAPTCHA API -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
