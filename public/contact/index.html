@@ -189,8 +189,14 @@
           <input class="field w-input" maxlength="256" name="name" placeholder="Enter your name" type="text" required />
           <input class="field w-input" maxlength="256" name="email" placeholder="Enter your email address" type="email" required />
           <input class="field area w-input" maxlength="256" name="message" placeholder="Enter message" type="text" required />
-          <div class="g-recaptcha" data-sitekey="6LeNPuUqAAAAAOLA9Q4l620A_HfT4V5MhdCxxVWX"></div>
-          <input type="submit" class="button submit-button w-button" value="Submit" />
+          <div class="g-recaptcha" 
+        data-sitekey="6LeNPuUqAAAAAOLA9Q4l620A_HfT4V5MhdCxxVWX" 
+        data-callback="enableSubmit" 
+        data-expired-callback="disableSubmit">
+    </div>
+
+    <!-- Submit button (Disabled by default) -->
+    <input type="submit" id="submit-button" class="button submit-button w-button" value="Submit" disabled />
       </form>
 
           <div class="success-message w-form-done" tabindex="-1" role="region" aria-label="Email Form success">
@@ -539,6 +545,20 @@
       }
     }
   </script>
+<script>
+  function enableSubmit(token) {
+      if (token) {
+          document.getElementById("submit-button").removeAttribute("disabled"); // Enable submit button
+      }
+  }
+  
+  function disableSubmit() {
+      document.getElementById("submit-button").setAttribute("disabled", "true"); // Disable submit button if captcha expires
+  }
+  </script>
+  
+  <!-- Load Google reCAPTCHA API -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>
