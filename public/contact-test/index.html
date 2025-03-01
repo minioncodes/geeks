@@ -189,9 +189,13 @@
           <input class="field w-input" maxlength="256" name="name" placeholder="Enter your name" type="text" required />
           <input class="field w-input" maxlength="256" name="email" placeholder="Enter your email address" type="email" required />
           <input class="field area w-input" maxlength="256" name="message" placeholder="Enter message" type="text" required />
-          <div class="g-recaptcha" data-sitekey="6LeNPuUqAAAAAOLA9Q4l620A_HfT4V5MhdCxxVWX"></div>
+          <div class="g-recaptcha" 
+        data-sitekey="6LeNPuUqAAAAAOLA9Q4l620A_HfT4V5MhdCxxVWX" 
+        data-callback="enableSubmit" 
+        data-expired-callback="disableSubmit">
+    </div>
 
-          <input type="submit" id="submit-button" class="button submit-button w-button" value="Submit" disabled>
+    <input type="submit" id="submit-button" class="button submit-button w-button" value="Submit" disabled />
       </form>
 
           <div class="success-message w-form-done" tabindex="-1" role="region" aria-label="Email Form success">
@@ -541,16 +545,32 @@
     }
   </script>
 <script>
-  setInterval(() => {
-      if (grecaptcha.getResponse().length > 0) {
-          console.log("✅ CAPTCHA verified, enabling submit button.");
-          document.getElementById("submit-button").disabled = false;
-      } else {
-          console.log("❌ CAPTCHA not verified, keeping submit button disabled.");
-          document.getElementById("submit-button").disabled = true;
-      }
-  }, 1000);
-</script>
+  function enableSubmit(token) {
+    console.log("reCAPTCHA Triggered! Token:", token);
+    const submitButton = document.getElementById("submit-button");
+    if (token) {
+        submitButton.removeAttribute("disabled"); 
+        console.log("Submit button enabled!");
+    } else {
+        console.warn("Token is missing, submit button remains disabled.");
+    }
+}
+
+  
+  function disableSubmit() {
+      document.getElementById("submit-button").setAttribute("disabled", "true"); // Disable submit button if captcha expires
+  }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        grecaptcha.ready(function() {
+            console.log("reCAPTCHA is ready!");
+        });
+    });
+    </script>
+    
+  <!-- Load Google reCAPTCHA API -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>
